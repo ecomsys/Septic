@@ -1,0 +1,30 @@
+<section class="section-y-padding bg-white">
+
+  <div class="eco-container  flex flex-col gap-[24px] smx:gap-[40px]">
+
+    <!-- TITLE -->
+    <div class="text-center max-w-[1160px] mx-auto flex flex-col gap-[12px]">
+      <h2 class="text-h2 uppercase font-unbounded text-light-base">
+        Работы проводят <span class="text-brand-main"> опытные специалисты </span> под руководством главного инженера      
+      </h2>
+      <p class="text-h5 text-light-secondary">
+        От заявки до установки автономной канализации
+      </p>
+    </div>
+
+    <!-- ITEMS -->
+    <div class="flex flex-col smx:grid smx:grid-cols-2 mds:grid-cols-4 gap-[24px]">
+
+      {{#each works}}
+        {{> components/works-item
+          image=this.image
+          title=this.title
+          text=this.text
+          reverse=this.reverse
+        }}
+      {{/each}}
+
+    </div>
+
+  </div>
+</section>

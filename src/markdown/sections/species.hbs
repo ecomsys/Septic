@@ -1,0 +1,377 @@
+<section class="species section-y-padding">
+  <div class="eco-container">
+    <div class="md:hidden mb-[16px] smx:mb-[24px] text-right max-w-[1160px] mx-auto">
+          <h2 class="text-h2 uppercase font-unbounded text-light-base">
+            ВИДЫ <span class="text-brand-main">АВТОНОМНЫХ</span> КАНАЛИЗАЦИЙ
+          </h2>
+        </div>
+
+    <!--MOBILE NAVIGATION -->
+    {{> components/slider-navigation navId="species-tabs-nav"
+    paginationClass="species-pagination" hideClass="mb-4 smx:hidden"}}
+   
+
+    <!-- HEADER -->
+    <div
+      class="grid grid-cols-[18fr_10fr] smx:grid-cols-[27fr_45fr] mdx:grid-cols-[15fr_30fr] gap-[16px] items-end mdx:mb-8"
+    >
+      <!-- COL 1 -->
+      <div class="char-header shrink-0">
+        <div class="max-w-[160px] md:max-w-[354px] overflow-hidden mb-[30px] ">
+          <img
+            src="/images/webp/species/sideburns.webp"
+            alt=""
+            class="w-full h-full object-cover"
+          />
+        </div>
+
+        <span
+          class="text-[12px] md:text-[16px] leading-[1.6] text-light-base min-h-[38px] md:min-h-[52px] font-unbounded uppercase leading-[1.6]"
+          >Характеристики</span
+        >
+      </div>
+
+      <div class="block">
+
+        <div class="hidden mb-[70px] md:block text-right max-w-[1160px] mx-auto">
+          <h2 class="text-h2 uppercase font-unbounded text-light-base">
+            ВИДЫ <span class="text-brand-main">АВТОНОМНЫХ</span> КАНАЛИЗАЦИЙ
+          </h2>
+        </div>
+
+        <div class="grid grid-cols-[1fr_1fr_1fr]">
+          <!-- TYPE 0 -->
+          <div
+            class="type-col hidden smx:block"
+            data-type="0"
+            data-title="Накопительная <br> емкость"
+            data-img="/images/webp/species/storage-capacity.webp"
+          >
+            <div class="max-w-[100px] aspect-square mx-auto mb-[8px]">
+              <img
+                src="/images/webp/species/storage-capacity.webp"
+                class="w-auto h-full object-cover"
+              />
+            </div>
+
+            <div
+              class="text-[12px] md:text-[16px] leading-[1.6] text-light-base min-h-[38px] md:min-h-[52px] leading-[1.6] mx-auto text-center uppercase font-unbounded"
+            >
+              Накопительная <br />
+              емкость
+            </div>
+          </div>
+
+          <!-- TYPE 1 -->
+          <div
+            class="type-col hidden smx:block"
+            data-type="1"
+            data-title="Аэробный <br> септик"
+            data-img="/images/webp/species/anaerobic-septic.webp"
+          >
+            <div class="max-w-[100px] aspect-square mx-auto mb-[8px]">
+              <img
+                src="/images/webp/species/anaerobic-septic.webp"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div
+              class="text-[12px] md:text-[16px] leading-[1.6] text-light-base min-h-[38px] md:min-h-[52px] leading-[1.6] mx-auto text-center uppercase font-unbounded"
+            >
+              Аэробный <br />
+              септик
+            </div>
+          </div>
+
+          <!-- TYPE 2 -->
+          <div
+            class="type-col hidden smx:block"
+            data-type="2"
+            data-title="система <br> биоочистки"
+            data-img="/images/webp/species/bio-treatment-system.webp"
+          >
+            <div class="max-w-[100px] aspect-square mx-auto mb-[8px]">
+              <img
+                src="/images/webp/species/bio-treatment-system.webp"
+                class="w-full h-full object-cover"
+              />
+            </div>
+
+            <div
+              class="text-[12px] md:text-[16px] leading-[1.6] text-light-base mx-auto text-center uppercase font-unbounded min-h-[38px] md:min-h-[52px]"
+            >
+              система <br />
+              биоочистки
+            </div>
+          </div>
+        </div>
+
+        
+      <!-- MOBILE HEADER -->
+      <div class="smx:hidden text-center " data-mobile-header></div>
+      </div>
+
+    </div>
+
+    <!-- BODY -->
+    <div class="mt-1.5 smx:mt-3 mdx:mt-5 flex flex-col">
+
+      <!-- ROW (WP LOOP) 111-->
+      <div class="grid grid-cols-[18fr_10fr] smx:grid-cols-[27fr_15fr_15fr_15fr] mdx:grid-cols-[15fr_10fr_10fr_10fr] border-r smx:border-r-0
+       border-t border-slate-300 ">
+        <div class="font-unbounded uppercase text-[12px] text-light-base leading-[1.6] pr-5 py-1 mdx:py-2 mih-h-[32px] border-slate-300 border-r ">
+          <span>Уровень очистки</span>
+        </div>
+
+        <div data-type="0" class="hidden smx:flex justify-center items-center py-1 mdx:py-2 mih-h-[32px] border-slate-300 border-r">
+           <svg class="w-6 h-6 text-brand-one shrink-0">
+                <use href="/icons/sprite/sprite.svg#check"></use>
+           </svg>
+        </div>
+        <div data-type="1" class="hidden smx:flex justify-center items-center py-1 mdx:py-2 mih-h-[32px] border-slate-300 border-r">
+           <svg class="w-6 h-6 text-brand-one shrink-0">
+                <use href="/icons/sprite/sprite.svg#check"></use>
+           </svg>
+        </div>
+        <div data-type="2" class="hidden smx:flex justify-center items-center py-1 mdx:py-2 mih-h-[32px]">
+           <svg class="w-6 h-6 text-brand-one shrink-0">
+                <use href="/icons/sprite/sprite.svg#check"></use>
+           </svg>
+        </div>
+
+        <div class="smx:hidden flex justify-center items-center py-1 mdx:py-2 mih-h-[32px]" data-mobile-cell></div>
+      </div>
+
+      <!-- ROW (WP LOOP) 222-->
+      <div class="grid grid-cols-[18fr_10fr] smx:grid-cols-[27fr_15fr_15fr_15fr] mdx:grid-cols-[15fr_10fr_10fr_10fr] border-r smx:border-r-0
+       border-t border-slate-300 ">
+          <div class="font-unbounded uppercase text-[12px] text-light-base leading-[1.6] pr-5 py-1 mdx:py-2 mih-h-[32px] border-slate-300 border-r">
+            <span>Подходит для постоянного проживания</span>
+          </div>
+
+        <div data-type="0" class="hidden smx:flex justify-center items-center py-1 mdx:py-2 mih-h-[32px] border-slate-300 border-r"></div>
+        <div data-type="1" class="hidden smx:flex justify-center items-center py-1 mdx:py-2 mih-h-[32px] border-slate-300 border-r">
+           <svg class="w-6 h-6 text-brand-one shrink-0">
+                <use href="/icons/sprite/sprite.svg#check"></use>
+           </svg>
+        </div>
+        <div data-type="2" class="hidden smx:flex justify-center items-center py-1 mdx:py-2 mih-h-[32px] ">
+           <svg class="w-6 h-6 text-brand-one shrink-0">
+                <use href="/icons/sprite/sprite.svg#check"></use>
+           </svg>
+        </div>
+
+        <div class="smx:hidden flex justify-center items-center py-1 mdx:py-2 mih-h-[32px]" data-mobile-cell></div>
+      </div>
+
+      <!-- ROW (WP LOOP) 333-->
+      <div class="grid grid-cols-[18fr_10fr] smx:grid-cols-[27fr_15fr_15fr_15fr] mdx:grid-cols-[15fr_10fr_10fr_10fr] border-r smx:border-r-0
+      border-t border-slate-300 ">
+        <div class="font-unbounded uppercase text-[12px] text-light-base leading-[1.6] pr-5 py-1 mdx:py-2 mih-h-[32px] border-slate-300 border-r">
+          <span>Законченное очистное сооружение</span>
+          </div>
+
+        <div data-type="0" class="hidden smx:flex justify-center items-center py-1 mdx:py-2 mih-h-[32px] border-slate-300 border-r">
+           <svg class="w-6 h-6 text-brand-one shrink-0">
+                <use href="/icons/sprite/sprite.svg#check"></use>
+           </svg>
+        </div>
+        <div data-type="1" class="hidden smx:flex justify-center items-center py-1 mdx:py-2 mih-h-[32px] border-slate-300 border-r">
+           <svg class="w-6 h-6 text-brand-one shrink-0">
+                <use href="/icons/sprite/sprite.svg#check"></use>
+           </svg>
+        </div>
+        <div data-type="2" class="hidden smx:flex justify-center items-center py-1 mdx:py-2 mih-h-[32px]">
+           <svg class="w-6 h-6 text-brand-one shrink-0">
+                <use href="/icons/sprite/sprite.svg#check"></use>
+           </svg>
+        </div>
+
+         <div class="smx:hidden flex justify-center items-center py-1 mdx:py-2 mih-h-[32px]" data-mobile-cell></div>
+        </div>
+
+         <!-- ROW (WP LOOP) 444-->
+      <div class="grid grid-cols-[18fr_10fr] smx:grid-cols-[27fr_15fr_15fr_15fr] mdx:grid-cols-[15fr_10fr_10fr_10fr] border-r smx:border-r-0
+          border-t border-slate-300 ">
+        <div class="font-unbounded uppercase text-[12px] text-light-base leading-[1.6] pr-5 py-1 mdx:py-2 mih-h-[32px] border-slate-300 border-r">
+          <span>Требует почвенной очистки</span>
+          </div>
+
+        <div data-type="0" class="hidden smx:flex justify-center items-center py-1 mdx:py-2 mih-h-[32px] border-slate-300 border-r">
+           <svg class="w-6 h-6 text-brand-one shrink-0">
+                <use href="/icons/sprite/sprite.svg#check"></use>
+           </svg>
+        </div>
+        <div data-type="1" class="hidden smx:flex justify-center items-center py-1 mdx:py-2 mih-h-[32px] border-slate-300 border-r">
+           <span class="text-body text-light-base text-center">Не предусмотрено</span>
+        </div>
+        <div data-type="2" class="hidden smx:flex justify-center items-center py-1 mdx:py-2 mih-h-[32px]">
+           <svg class="w-6 h-6 text-brand-one shrink-0">
+                <use href="/icons/sprite/sprite.svg#check"></use>
+           </svg>
+        </div>
+
+         <div class="smx:hidden flex justify-center items-center py-1 mdx:py-2 mih-h-[32px]" data-mobile-cell></div>
+      </div>
+
+         <!-- ROW (WP LOOP) 555-->
+      <div class="grid grid-cols-[18fr_10fr] smx:grid-cols-[27fr_15fr_15fr_15fr] mdx:grid-cols-[15fr_10fr_10fr_10fr] border-r smx:border-r-0
+      border-t border-slate-300 ">
+        <div class="font-unbounded uppercase text-[12px] text-light-base leading-[1.6] pr-5 py-1 mdx:py-2 mih-h-[32px] border-slate-300 border-r">
+          <span>Необходимость дополнительных расходов:</span>
+          <ul>
+            <li>- котлован</li>
+            <li>- щебень</li>
+            <li>- дренажные трубы</li>
+            <li>- геотекстиль</li>
+          </ul>
+          </div>
+
+        <div data-type="0" class="hidden smx:flex justify-center items-center py-1 mdx:py-2 mih-h-[32px] border-slate-300 border-r">
+           <svg class="w-6 h-6 text-brand-one shrink-0">
+                <use href="/icons/sprite/sprite.svg#check"></use>
+           </svg>
+        </div>
+        <div data-type="1" class="hidden smx:flex justify-center items-center py-1 mdx:py-2 mih-h-[32px] border-slate-300 border-r">
+           <svg class="w-6 h-6 text-brand-one shrink-0">
+                <use href="/icons/sprite/sprite.svg#check"></use>
+           </svg>
+        </div>
+        <div data-type="2" class="hidden smx:flex justify-center items-center py-1 mdx:py-2 mih-h-[32px]">
+           <svg class="w-6 h-6 text-brand-one shrink-0">
+                <use href="/icons/sprite/sprite.svg#check"></use>
+           </svg>
+        </div>
+
+         <div class="smx:hidden flex justify-center items-center py-1 mdx:py-2 mih-h-[32px]" data-mobile-cell></div>
+      </div>
+
+
+         <!-- ROW (WP LOOP) 666-->
+      <div class="grid grid-cols-[18fr_10fr] smx:grid-cols-[27fr_15fr_15fr_15fr] mdx:grid-cols-[15fr_10fr_10fr_10fr] border-r smx:border-r-0
+      border-t border-slate-300 ">
+        <div class="font-unbounded uppercase text-[12px] text-light-base leading-[1.6] pr-5 py-1 mdx:py-2 mih-h-[32px] border-slate-300 border-r">
+          <span>откачка ассенизаторской машиной</span>
+          </div>
+
+        <div data-type="0" class="hidden smx:flex justify-center items-center py-1 mdx:py-2 mih-h-[32px] border-slate-300 border-r">
+          <span class="text-body text-light-base text-center">2-3 раза в год</span>
+        </div>
+        <div data-type="1" class="hidden smx:flex justify-center items-center py-1 mdx:py-2 mih-h-[32px] border-slate-300 border-r">
+            <span class="text-body text-light-base text-center">2-3 раза в год</span>
+        </div>
+        <div data-type="2" class="hidden smx:flex justify-center items-center py-1 mdx:py-2 mih-h-[32px]">
+            <span class="text-body text-light-base text-center">Не требуеться</span>
+        </div>
+
+         <div class="smx:hidden flex justify-center items-center py-1 mdx:py-2 mih-h-[32px]" data-mobile-cell></div>
+      </div>
+
+         <!-- ROW (WP LOOP) 777-->
+      <div class="grid grid-cols-[18fr_10fr] smx:grid-cols-[27fr_15fr_15fr_15fr] mdx:grid-cols-[15fr_10fr_10fr_10fr] border-r smx:border-r-0
+      border-t border-slate-300 ">
+        <div class="font-unbounded uppercase text-[12px] text-light-base leading-[1.6] pr-5 py-1 mdx:py-2 mih-h-[32px] border-slate-300 border-r">
+          <span>возможность использовать воду после очистки для полива растений и газона</span>
+          </div>
+
+        <div data-type="0" class="hidden smx:flex justify-center items-center py-1 mdx:py-2 mih-h-[32px] border-slate-300 border-r">
+           {{!-- <svg class="w-6 h-6 text-brand-one shrink-0">
+                <use href="/icons/sprite/sprite.svg#check"></use>
+           </svg> --}}
+        </div>
+        <div data-type="1" class="hidden smx:flex justify-center items-center py-1 mdx:py-2 mih-h-[32px] border-slate-300 border-r">
+           {{!-- <svg class="w-6 h-6 text-brand-one shrink-0">
+                <use href="/icons/sprite/sprite.svg#check"></use>
+           </svg> --}}
+        </div>
+        <div data-type="2" class="hidden smx:flex justify-center items-center py-1 mdx:py-2 mih-h-[32px]">
+           {{!-- <svg class="w-6 h-6 text-brand-one shrink-0">
+                <use href="/icons/sprite/sprite.svg#check"></use>
+           </svg> --}}
+        </div>
+
+         <div class="smx:hidden flex justify-center items-center py-1 mdx:py-2 mih-h-[32px]" data-mobile-cell></div>
+      </div>
+
+           <!-- ROW (WP LOOP) 888-->
+      <div class="grid grid-cols-[18fr_10fr] smx:grid-cols-[27fr_15fr_15fr_15fr] mdx:grid-cols-[15fr_10fr_10fr_10fr] border-r smx:border-r-0
+      border-t border-slate-300 ">
+        <div class="font-unbounded uppercase text-[12px] text-light-base leading-[1.6] pr-5 py-1 mdx:py-2 mih-h-[32px] border-slate-300 border-r">
+          <span>Необходимость расположения не менее 50 метров от источник аводы (скважина, колодец) по нормам СНИП</span>
+          </div>
+
+        <div data-type="0" class="hidden smx:flex justify-center items-center py-1 mdx:py-2 mih-h-[32px] border-slate-300 border-r">
+           {{!-- <svg class="w-6 h-6 text-brand-one shrink-0">
+                <use href="/icons/sprite/sprite.svg#check"></use>
+           </svg> --}}
+        </div>
+        <div data-type="1" class="hidden smx:flex justify-center items-center py-1 mdx:py-2 mih-h-[32px] border-slate-300 border-r">
+           <svg class="w-6 h-6 text-brand-one shrink-0">
+                <use href="/icons/sprite/sprite.svg#check"></use>
+           </svg>
+        </div>
+        <div data-type="2" class="hidden smx:flex justify-center items-center py-1 mdx:py-2 mih-h-[32px]">
+           <svg class="w-6 h-6 text-brand-one shrink-0">
+                <use href="/icons/sprite/sprite.svg#check"></use>
+           </svg>
+        </div>
+
+         <div class="smx:hidden flex justify-center items-center py-1 mdx:py-2 mih-h-[32px]" data-mobile-cell></div>
+      </div>
+
+           <!-- ROW (WP LOOP) 999-->
+      <div class="grid grid-cols-[18fr_10fr] smx:grid-cols-[27fr_15fr_15fr_15fr] mdx:grid-cols-[15fr_10fr_10fr_10fr] border-r smx:border-r-0
+      border-t border-slate-300 ">
+        <div class="font-unbounded uppercase text-[12px] text-light-base leading-[1.6] pr-5 py-1 mdx:py-2 mih-h-[32px] border-slate-300 border-r">
+          <span>Подходит при высоком уровне грунтовых вод на участке</span>
+          </div>
+
+        <div data-type="0" class="hidden smx:flex justify-center items-center py-1 mdx:py-2 mih-h-[32px] border-slate-300 border-r">
+           {{!-- <svg class="w-6 h-6 text-brand-one shrink-0">
+                <use href="/icons/sprite/sprite.svg#check"></use>
+           </svg> --}}
+        </div>
+        <div data-type="1" class="hidden smx:flex justify-center items-center py-1 mdx:py-2 mih-h-[32px] border-slate-300 border-r">
+           {{!-- <svg class="w-6 h-6 text-brand-one shrink-0">
+                <use href="/icons/sprite/sprite.svg#check"></use>
+           </svg> --}}
+        </div>
+        <div data-type="2" class="hidden smx:flex justify-center items-center py-1 mdx:py-2 mih-h-[32px]">
+           {{!-- <svg class="w-6 h-6 text-brand-one shrink-0">
+                <use href="/icons/sprite/sprite.svg#check"></use>
+           </svg> --}}
+        </div>
+
+         <div class="smx:hidden flex justify-center items-center py-1 mdx:py-2 mih-h-[32px]" data-mobile-cell></div>
+     </div>
+
+           <!-- ROW (WP LOOP) 000-->
+      <div class="grid grid-cols-[18fr_10fr] smx:grid-cols-[27fr_15fr_15fr_15fr] mdx:grid-cols-[15fr_10fr_10fr_10fr] border-r smx:border-r-0
+      border-t border-b border-slate-300 ">
+        <div class="font-unbounded uppercase text-[12px] text-light-base leading-[1.6] pr-5 py-1 mdx:py-2 mih-h-[32px] border-slate-300 border-r">
+          <span>Образование метана и прочих ядов</span>
+          </div>
+
+        <div data-type="0" class="hidden smx:flex justify-center items-center py-1 mdx:py-2 mih-h-[32px] border-slate-300 border-r">
+           <svg class="w-6 h-6 text-brand-one shrink-0">
+                <use href="/icons/sprite/sprite.svg#check"></use>
+           </svg>
+        </div>
+        <div data-type="1" class="hidden smx:flex justify-center items-center py-1 mdx:py-2 mih-h-[32px] border-slate-300 border-r">
+           <svg class="w-6 h-6 text-brand-one shrink-0">
+                <use href="/icons/sprite/sprite.svg#check"></use>
+           </svg>
+        </div>
+        <div data-type="2" class="hidden smx:flex justify-center items-center py-1 mdx:py-2 mih-h-[32px]">
+           <svg class="w-6 h-6 text-brand-one shrink-0">
+                <use href="/icons/sprite/sprite.svg#check"></use>
+           </svg>
+        </div>
+
+         <div class="smx:hidden flex justify-center items-center py-1 mdx:py-2 mih-h-[32px]" data-mobile-cell></div>
+      </div>
+        
+    </div>
+  </div>
+</section>

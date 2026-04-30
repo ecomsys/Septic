@@ -1,0 +1,33 @@
+{{!--
+cb
+cb-input
+cb-box
+cb-icon 
+--}}
+
+<label class="cb flex items-start gap-[16px] text-[12px] text-light-secondary leading-[1.6] cursor-pointer ">
+
+  <!-- INPUT -->
+  <input
+    type="checkbox"
+    required="{{required}}"
+    name="{{name}}"
+    class="cb-input"
+    {{#if checked}}checked{{/if}}
+  />
+
+  <!-- BOX -->
+  <span class="cb-box shrink-0 mt-[3px] w-5 h-5 border-2 border-slate-200 rounded-[4px] flex items-center justify-center transition ">
+
+    <svg class="cb-icon w-5 h-5 scale-150  translate-x-1/6  -translate-y-1/5 text-brand-main ">
+      <use href="/icons/sprite/sprite.svg#check"></use>
+    </svg>
+
+  </span>
+
+  <!-- TEXT -->
+  <span>
+    {{text}}
+  </span>
+
+</label>

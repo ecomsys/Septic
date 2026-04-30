@@ -1,0 +1,12 @@
+<button
+  id="{{id}}"
+  type="{{type}}"
+  class="{{class}} font-unbounded uppercase text-center items-center justify-center border border-brand-main bg-brand-main text-opposite
+    rounded-full px-[1rem] mdx:px-[1rem] cursor-pointer
+    transition-all duration-200  hover:text-white hover:bg-brand-main-darkest hover:border-brand-main-darkest 
+    active:text-dark-base active:border-brand-one active:bg-brand-one active:scale-95
+    disabled:text-brand-main disabled:bg-bg-color5 disabled:bg-bg-color5 disabled:cursor-not-allowed"
+  {{#if disabled}}disabled{{/if}}
+>
+  <span class="text-nowrap text-[0.75rem] leading-[1.6] mt-0.5">{{text}}</span>
+</button>

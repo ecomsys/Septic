@@ -1,0 +1,186 @@
+<header class="bg-bg-white border-b border-neutral-200">
+  <div class="eco-container">
+    <!-- ROW 1 -->
+    <div class="border-b border-neutral-200">
+      <div class="flex items-center py-pad-8">
+        <!-- ================= MOBILE ================= -->
+        <div class="flex w-full items-center justify-between smx:hidden">
+          <!-- BURGER -->
+          <button
+            id="burger-btn"
+            class="flex items-center cursor-pointer text-brand-one hover:text-light-base duration-200 transition-all"
+          >
+            <svg class="w-6 h-6 shrink-0">
+              <use href="/icons/sprite/sprite.svg#burger"></use>
+            </svg>
+          </button>
+
+          <!-- STATUS -->
+          <div class="flex items-center gap-pad-8">
+            <span
+              class="w-2 h-2 rounded-full bg-primary shrink-0 status-pulse"
+            ></span>
+            <span class="text-caption text-light-secondary text-nowrap">
+              Мы сейчас работаем
+            </span>
+          </div>
+        </div>
+
+        <!-- ================= TABLET (mds) ================= -->
+        <div
+          class="hidden smx:flex mdx:hidden w-full justify-between items-start gap-pad-80"
+        >
+          <!-- EMAIL -->
+          <div class="flex items-center gap-pad-8">
+            <svg class="shrink-0 w-4 h-4 text-brand-one">
+              <use href="/icons/sprite/sprite.svg#mail"></use>
+            </svg>
+            <span class="text-caption text-light-base text-nowrap">
+              info@septiki-spb.com
+            </span>
+          </div>
+
+          <!-- ADDRESS (CENTER) -->
+          <div class="flex items-start gap-pad-8">
+            <svg class="shrink-0 w-4 h-4 text-brand-one">
+              <use href="/icons/sprite/sprite.svg#pin"></use>
+            </svg>
+            <span class="text-caption text-light-base">
+              г. Санкт-Петербург, пр-кт Космонавтов, д. 42, литера А, помещ.
+              3-Н, офис 2
+            </span>
+          </div>
+
+          <!-- STATUS -->
+          <div class="flex items-center gap-pad-8">
+            <span
+              class="w-2 h-2 rounded-full bg-primary shrink-0 status-pulse"
+            ></span>
+            <span class="text-caption text-light-secondary text-nowrap">
+              Мы сейчас работаем
+            </span>
+          </div>
+        </div>
+
+        <!-- ================= DESKTOP (mdx+) ================= -->
+        <div
+          class="hidden mdx:flex w-full items-center justify-between gap-pad-24"
+        >
+          <!-- LEFT (email + address together) -->
+          <div class="flex items-center gap-pad-16">
+            <div class="flex items-center gap-pad-8">
+              <svg class="w-4 h-4 text-brand-one shrink-0">
+                <use href="/icons/sprite/sprite.svg#mail"></use>
+              </svg>
+              <span class="text-caption text-light-base text-nowrap">
+                info@septiki-spb.com
+              </span>
+            </div>
+
+            <div class="flex items-center gap-pad-8">
+              <svg class="w-4 h-4 text-brand-one shrink-0">
+                <use href="/icons/sprite/sprite.svg#pin"></use>
+              </svg>
+              <span class="text-caption text-light-base">
+                г. Санкт-Петербург, пр-кт Космонавтов, д. 42, литера А, помещ.
+                3-Н, офис 2
+              </span>
+            </div>
+          </div>
+
+          <!-- STATUS -->
+          <div class="flex items-center gap-pad-8">
+            <span
+              class="w-2 h-2 rounded-full bg-primary shrink-0 status-pulse"
+            ></span>
+            <span class="text-caption text-light-secondary text-nowrap">
+              Мы сейчас работаем
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ROW 2 -->
+    <div
+      class="flex flex-col gap-3 py-2 xsx:py-0 xsx:flex-row items-center justify-between min-h-[5rem]"
+    >
+      <!-- LOGO -->
+      <div class="flex flex-col gap-1 mdx:max-w-[33%]">
+        <div
+          class="text-h4 font-title text-light-base w-[9.3125rem] h-[1.625rem] smx:w-[11rem] smx:h-[1.875rem]"
+        >
+          <img
+            src="/images/webp/logo.webp"
+            alt="СЕПТИК СПБ"
+            class="w-full h-auto object-cover"
+          />
+        </div>
+        <div
+          class="text-[0.625rem] smx:text-[0.75rem] leading-[1.6] text-light-secondary max-w-[9.6875rem] smx:max-w-[12.875rem] mdx:max-w-full"
+        >
+          Автономные канализации с доставкой и установкой в СПб
+        </div>
+      </div>
+
+      <!-- RIGHT BLOCK -->
+      <div class="flex items-center gap-5 mds:gap-pad-40 mdx:gap-pad-80">
+
+        <div class="flex flex-col mds:flex-row gap-1 items-center mds:gap-pad-40 mdx:gap-pad-80">
+          <div class="flex items-center gap-pad-16 order-2 mds:order-1">
+            {{!-- telegarm --}}
+            <a
+              href="#"
+              target="_blank"
+              title="Телеграм"
+              class="transition diration-200 hover:scale-110"
+            >
+              <svg class="w-6 h-6 text-brand-one shrink-0">
+                <use href="/icons/sprite/sprite.svg#telegram"></use>
+              </svg>
+            </a>
+
+            {{!-- watsapp --}}
+            <a
+              href="#"
+              target="_blank"
+              title="Ватсап"
+              class="transition diration-200 hover:scale-110"
+            >
+              <svg class="w-6 h-6 shrink-0">
+                <use href="/icons/sprite/sprite.svg#whatsapp"></use>
+              </svg>
+            </a>
+
+            {{!-- max --}}
+            <a
+              href="#"
+              target="_blank"
+              title="Макс"
+              class="transition diration-200 hover:scale-110"
+            >
+              <svg class="w-6 h-6 shrink-0">
+                <use href="/icons/sprite/sprite.svg#max"></use>
+              </svg>
+            </a>
+          </div>
+
+          <!-- PHONE -->
+          <div class="flex items-center gap-pad-8 text-body text-light-base order-1 mds:order-2">
+            <svg class="w-5 h-5 shrink-0">
+              <use href="/icons/sprite/sprite.svg#whatsapp"></use>
+            </svg>
+            <span
+              class="uppercase leading-[1.6] text-[0.875rem] smx:text-[1rem] mdx:text-[1.25rem] font-unbounded font-normal text-nowrap"
+              >+7 (913) 555-0199</span
+            >
+          </div>
+        </div>
+
+        <!-- BUTTON (hidden on mobile) -->
+        {{> components/button-transparent-blue id="callback-btn" text="Заказать
+        звонок" class="hidden smx:flex " disabled=false }}
+      </div>
+    </div>
+  </div>
+</header>

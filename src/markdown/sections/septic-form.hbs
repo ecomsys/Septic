@@ -1,0 +1,329 @@
+<section class="septic-form section-y-padding bg-bg-base">
+  <div class="eco-container">
+
+    <div class="relative overflow-hidden flex flex-col md:flex-row rounded-[24px] mdx:rounded-[36px] septic-shadow bg-white py-[32px] px-[12px] smx:p-[20px] mdx:p-[40px]">
+
+      {{!-- LEFT --}}
+      <form id="septic-form" class="flex-1 flex flex-col gap-6 md:border-r border-gray-200 md:pr-[20px] mdx:pr-[40px]">
+
+        <!-- Заголовок -->
+        <h2 class="text-h2 uppercase text-light-base font-unbounded">
+          Подбор септика
+        </h2>
+
+        <!-- Проживание -->
+        <div class="flex flex-col gap-2 border-b border-gray-200 pb-6 
+        smx:flex-row smx:gap-[20%] 
+        mdx:flex-col mdx:gap-2.5">
+
+          <div class="flex items-start gap-1.5 mdx:gap-3 flex-nowrap">
+            <svg class="-mt-0.5 w-6 h-6 text-brand-one shrink-0">
+              <use href="/icons/sprite/sprite.svg#house"></use>
+            </svg>
+            <span class="text-body uppercase text-light-base font-unbounded">
+              Проживание
+            </span>
+          </div>
+
+          <div class="flex flex-row gap-6 mdx:pl-8">
+
+            {{> components/radio-custom 
+              name="septic-live-house" 
+              value="permanently" 
+              label="Постоянная" 
+            }}
+
+            {{> components/radio-custom 
+              name="septic-live-house" 
+              value="season" 
+              label="Сезонная" 
+            }}
+
+          </div>
+        </div>
+
+        <!-- Колонки -->
+        <div class="flex gap-6 border-b border-gray-200 pb-6 flex-col smx:flex-row">
+
+          <!-- LEFT COL -->
+          <div class="flex flex-col justify-between gap-4 flex-1">
+
+            <div class="flex items-start gap-1.5 mdx:gap-3 flex-nowrap">
+              <svg class="-mt-0.5 w-6 h-6 text-brand-one shrink-0">
+                <use href="/icons/sprite/sprite.svg#users"></use>
+              </svg>
+              <span class="text-body uppercase text-light-base font-unbounded">
+                Сколько человек проживает в доме?
+              </span>
+            </div>
+
+            <div class="flex flex-col gap-4">
+            <div class="relative w-full">
+
+            <!-- шкала -->
+            <div class="flex justify-between text-caption text-light-base font-unbounded">
+                <span>0</span>
+                <span>5</span>
+                <span>10</span>
+            </div>
+
+            <input
+                type="range"
+                name="septic-people-in-house-count"
+                min="0"
+                max="10"
+                value="5"
+                class="range-slider w-full"
+            />
+
+            </div>
+
+            <div class="flex flex-row gap-6 md:flex-col md:gap-2 ">
+
+              {{> components/radio-custom 
+                name="septic-people-in-house-mode" 
+                value="none" 
+                label="Не знаю" 
+              }}
+
+              {{> components/radio-custom 
+                name="septic-people-in-house-mode" 
+                value="more-10" 
+                label="Более 10 человек" 
+              }}
+
+            </div>
+            </div>
+          </div>
+
+          <!-- RIGHT COL -->
+          <div class="flex flex-col justify-between gap-4 flex-1">
+
+            <div class="flex items-start gap-1.5 mdx:gap-3 flex-nowrap">
+              <svg class="w-6 h-6 text-brand-one shrink-0">
+                <use href="/icons/sprite/sprite.svg#bath"></use>
+              </svg>
+              <span class="text-body uppercase text-light-base font-unbounded ">
+                Сколько ванных в доме?
+              </span>
+            </div>
+
+           <div class="flex flex-col gap-4">
+            <div class="relative w-full">
+
+            <div class="flex justify-between text-caption text-light-base font-unbounded">
+                <span>0</span>
+                <span></span>
+                <span>5</span>
+            </div>
+
+            <input
+                type="range"
+                name="septic-bathrooms-count"
+                min="0"
+                max="5"
+                value="2"
+                class="range-slider w-full"
+            />
+
+            </div>
+
+            <div class="flex flex-row gap-6 md:flex-col md:gap-2 ">
+
+              {{> components/radio-custom 
+                name="septic-bathrooms-mode" 
+                value="dontknow" 
+                label="Не знаю" 
+              }}
+
+              {{> components/radio-custom 
+                name="septic-bathrooms-mode" 
+                value="more-5" 
+                label="Более 5" 
+              }}
+
+            </div>
+            </div>
+            
+          </div>
+        </div>
+
+        <!-- ДОПОЛНИТЕЛЬНО -->
+        <div class="flex flex-col gap-4 border-b border-gray-200 pb-6 
+        mds:items-center mds:justify-between mds:flex-row mds:gap-10 
+        md:flex-col md:gap-4 md:items-start md:justify-normal">
+
+          <div class="flex items-start gap-1.5 md:gap-3 flex-nowrap">
+            <svg class="w-6 h-6 text-brand-one shrink-0">
+              <use href="/icons/sprite/sprite.svg#list"></use>
+            </svg>
+            <span class="text-body uppercase text-light-base font-unbounded">
+              Дополнительно
+            </span>
+          </div>
+
+          <div class="flex flex-col gap-1.5 md:gap-3 smx:flex-row smx:gap-6 md:flex-col md:pl-8">
+
+            {{> components/check-form-line 
+              name="septic-washing-machine"
+              text="Стиральная машина"
+            }}
+
+            {{> components/check-form-line 
+              name="septic-dishwashing-machine"
+              text="Посудомоечная машина"
+            }}
+
+          </div>
+        </div>
+
+        <!-- УРОВЕНЬ ВОДЫ -->
+        <div class="flex flex-col gap-4 border-b border-gray-200 pb-6
+        smx:items-center smx:flex-row smx:gap-10 
+        md:flex-col md:gap-4 md:items-start ">
+
+          <div class="flex items-start gap-1.5 mdx:gap-3 flex-nowrap">
+            <svg class="-mt-0.5 w-6 h-6 text-brand-one shrink-0">
+              <use href="/icons/sprite/sprite.svg#waves"></use>
+            </svg>
+            <span class="text-body uppercase text-light-base font-unbounded">
+              Уровень грунтовых вод
+            </span>
+          </div>
+
+          <div class="flex flex-row gap-6 md:pl-8">
+
+            {{> components/radio-custom 
+              name="septic-earthwater" 
+              value="high" 
+              label="Высокий" 
+            }}
+
+            {{> components/radio-custom 
+              name="septic-earthwater" 
+              value="low" 
+              label="Низкий" 
+            }}
+
+            {{> components/radio-custom 
+              name="septic-earthwater" 
+              value="dontknow" 
+              label="Не знаю" 
+            }}
+
+          </div>
+        </div>
+
+        <!-- СОЦСЕТИ -->
+        <div class="flex flex-col mb-[-20px] smm:mb-0
+        smm:flex-row smm:items-center smm:gap-8">
+
+          <span class="text-body uppercase text-light-base font-unbounded">
+            Куда отправить результат подбора?
+          </span>
+
+          <div class="flex justify-end smx:justify-normal -translate-y-[20px] smm:translate-y-0">
+          {{> components/social-send }}
+          </div>
+
+        </div>
+
+        <!-- КОНТАКТЫ -->
+        <div class="flex flex-col gap-4 bg-bg-color2 py-3 px-2 smx:py-4.5 smx:px-8 mdx:p-8 rounded-big">
+
+          <div class="flex flex-col mds:flex-row gap-4">
+
+            {{> components/input-rounded type="text" name="septic-name" placeholder="Имя" class="px-6 h-[48px] text-body-small " }}
+
+            {{> components/input-rounded type="tel" name="septic-tel" placeholder="Телефон" class="px-6 h-[48px] text-body-small" }}
+
+            {{> components/button-blue 
+              id="septic-btn-callback" 
+              text="Отправить"
+              class="mds:min-w-[178px] h-[48px]" 
+              type="submit" 
+              disabled=false 
+            }}
+
+          </div>
+
+          <p class="text-body-small text-light-secondary text-center smx:text-left">
+            Оставьте свои контакты и мы свяжемся с вами в ближайшее время
+          </p>
+
+        </div>
+
+      </form>
+
+      {{!-- RIGHT --}}    
+      <div class="z-5 w-full relative flex flex-col gap-3 pl-4 pt-7
+      smx:pt-10
+      md:gap-6 md:min-w-[240px] md:w-[25%] md:pt-0 md:pl-[20px] mdx:pl-[40px]">
+
+        <!-- Заголовок -->
+        <h2 class="text-body uppercase text-light-base font-unbounded">
+            Что будет после отправки заявки?
+        </h2>
+
+        <!-- список -->
+        <ol class="flex flex-col gap-3 list-none counter-reset custom-counter 
+        max-w-[213px] smx:max-w-[380px] mdx:max-w-[250px]">
+
+            <li class="flex items-start gap-2">
+            <span class="text-body text-brand-one font-unbounded">1.</span>
+            <span class="text-body text-light-secondary">
+                Позвоним
+            </span>
+            </li>
+
+            <li class="flex items-start gap-2">
+            <span class="text-body text-brand-one font-unbounded">2.</span>
+            <span class="text-body text-light-secondary">
+                Зададим уточняющие вопросы
+            </span>
+            </li>
+
+            <li class="flex items-start gap-2">
+            <span class="text-body text-brand-one font-unbounded">3.</span>
+            <span class="text-body text-light-secondary">
+                Рассчитаем предварительную стоимость
+            </span>
+            </li>
+
+            <li class="flex items-start gap-2">
+            <span class="text-body text-brand-one font-unbounded">4.</span>
+            <span class="text-body text-light-secondary">
+                Оплата любым удобным способом
+            </span>
+            </li>
+
+            <li class="flex items-start gap-2">
+            <span class="text-body text-brand-one font-unbounded">5.</span>
+            <span class="text-body text-light-secondary">
+                Доставка или самовывоз со склада
+            </span>
+            </li>
+
+        </ol>      
+        </div>
+
+          <!-- картинка -->
+        <div class="absolute  w-full flex justify-end pointer-events-none
+        right-[-7%] bottom-0
+        smx:right-[14%] smx:bottom-[-3%] 
+        md:right-[2%] md:w-auto md:bottom-0 ">
+            <img 
+            src="/images/webp/hand.webp" 
+            alt="phone hand"
+            class="w-full max-w-[150px] object-contain
+                smx:max-w-[178px] 
+                md:max-w-[225px]                
+                mdx:max-w-[255px]                
+                lg:max-w-[295px]                
+            "
+            />
+        </div>
+    </div>
+
+  </div>
+</section>

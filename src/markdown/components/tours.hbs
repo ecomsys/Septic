@@ -1,0 +1,13 @@
+<div class="tours-grid">
+
+  <h2>{{toursTitle}}</h2>
+
+  {{#each tours}}
+    <div class="tour-card">
+      <h3>{{city}}</h3>
+      <p>{{price}}</p>
+      <p>⭐ {{rating}}</p>
+      <p>{{#if available}}✅ Доступен{{else}}❌ Нет мест{{/if}}</p>
+    </div>
+  {{/each}}
+</div>

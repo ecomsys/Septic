@@ -1,0 +1,23 @@
+<div class="{{activeClass}} faq-item bg-icon-fill rounded-[8px] px-[40px] py-[24px] border border-slate-300" data-faq-item>
+  
+  <!-- HEADER -->
+  <button
+    class="faq-header w-full flex gap-3 justify-between text-left cursor-pointer"
+  >
+    <span class="text-[12px] leading-[1.6] uppercase font-unbounded">
+      {{title}}
+    </span>
+
+    <svg class="faq-icon w-5 h-5 shrink-0 transition-transform">
+      <use href="/icons/sprite/sprite.svg#down"></use>
+    </svg>
+  </button>
+
+  <!-- CONTENT -->
+  <div class="faq-content">
+    <div class="pt-[12px] text-[14px] smx:text-[16px] text-light-secondary leading-[1.6]">
+      {{content}}
+    </div>
+  </div>
+
+</div>

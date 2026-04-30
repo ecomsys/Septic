@@ -1,0 +1,279 @@
+html {
+  scrollbar-gutter: stable;
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+
+/********************************************
+Скрыть скролл
+*******************************************/
+.scroll-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-hide {
+  -ms-overflow-style: none;
+  /* IE/Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.scroll-hide-children * {
+  -ms-overflow-style: none;
+  /* IE/Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+/********************************************
+Контейнер
+*******************************************/
+.eco-container {
+  @apply min-w-[21.25rem] max-w-[120rem] mx-auto px-[0.75rem] xsx:px-[1.25rem] smx:px-[1.5625rem] md:px-wrapper;
+}
+
+/********************************************
+Status in header
+*******************************************/
+.status-pulse {
+  animation: statusPulse 1.6s ease-in-out infinite;
+  transform-origin: center;
+}
+
+/********************************************
+header burger modal
+********************************************/
+.animation-slidein-enter {
+  animation: modalSlideIn 0.25s ease-out forwards;
+}
+.animation-fadein-enter {
+  animation: modalFadeIn 0.25s ease-out forwards;
+}
+
+.show-burger-modal {
+  @apply block;
+}
+
+.hide-burger-modal {
+  @apply hidden;
+}
+
+/* отдельное ограничение */
+@media (min-width: 40rem) {
+  #burger-modal {
+    display: none !important;
+  }
+}
+
+.signup-shadow {
+  box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.15);
+  @apply bg-icon-fill;
+}
+
+/********************************************
+faq 
+********************************************/
+.faq-bg {
+  background-image: url("/images/webp/faq/faq-bg.webp");
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  background-size: cover;
+}
+
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-item.active .faq-content {
+  max-height: 500px; /* достаточно большое значение */
+}
+
+.faq-header,
+.faq-icon {
+  @apply text-light-base;
+  transition: color 0.2s ease-in-out;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(180deg);
+  @apply text-brand-one;
+}
+.faq-item.active .faq-header {
+  @apply text-brand-one;
+}
+
+/********************************************
+swiper
+********************************************/
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  flex-shrink: 0;
+  height: auto;
+}
+
+/********************************************
+section custom
+********************************************/
+.section-title {
+  @apply text-[18px] smx:text-[24px] mdx:text-[32px] leading-[1.6] uppercase font-unbounded text-light-base text-center;
+}
+
+.section-y-padding {
+  @apply py-[40px] smx:py-[60px] mdx:py-[100px];
+}
+
+/********************************************
+hide datepicker icon
+********************************************/
+/* Chrome / Edge / Safari */
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+  display: none;
+}
+
+/* дополнительно (иногда нужно) */
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+/* Firefox */
+input[type="date"] {
+  appearance: none;
+  -moz-appearance: textfield;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+/********************************************
+custom checkbox
+********************************************/
+/* скрываем input, но он живой */
+.cb-input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* по умолчанию галочка скрыта */
+.cb-icon {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: 0.15s ease;
+}
+
+/* ВОТ ГЛАВНАЯ ЛОГИКА */
+.cb-input:checked + .cb-box .cb-icon {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* optional: бордер можно тоже менять */
+.cb-input:checked + .cb-box {
+  /* border-color: #4f46e5;  */
+}
+
+
+/********************************************
+species tabs
+********************************************/
+[data-mobile-cell] {
+  min-height: 24px;
+}
+
+.species ul li {
+  padding-left: 0.65rem;
+}
+
+
+/********************************************
+septic form
+********************************************/
+.septic-shadow{
+  box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.04);
+}
+.radio-input:checked + span span {
+  display: flex;
+}
+
+/* убираем дефолт */
+.range-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 3px;
+  background: #cbd5e1; /* slate-300 */
+  border-radius: 999px;
+  outline: none;
+  transform: translateY(-8px);
+}
+
+/* track (webkit) */
+.range-slider::-webkit-slider-runnable-track {
+  height: 3px;
+  background: #cbd5e1;
+  border-radius: 999px;
+}
+
+/* thumb */
+.range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+
+  width: 24px;
+  height: 24px;
+
+  background: #fff;
+  border: 2px solid #3b82f6; /* blue-500 */
+  border-radius: 50%;
+
+  cursor: pointer;
+  margin-top: -10px; /* центрирование */
+}
+
+/* firefox */
+.range-slider::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+
+  background: #fff;
+  border: 2px solid #3b82f6;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.custom-counter {
+  counter-reset: item;
+}
+
+.custom-counter li {
+  counter-increment: item;
+}
+
+.counter-badge {
+  width: 22px;
+  height: 22px;
+  min-width: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 999px;
+  background: #3b82f6; /* blue-500 */
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+}

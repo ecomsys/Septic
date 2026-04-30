@@ -1,0 +1,30 @@
+<div id="burger-modal" class="fixed inset-0 hide-burger-modal z-50">
+  <div class="animation-fadein-enter absolute inset-0 bg-black/30 "></div>
+
+  <div class="animation-slidein-enter burger-modal relative bg-white w-full p-[1.5625rem] flex flex-col gap-[1.25rem] z-100">   
+
+    <!-- Content -->
+    <div class="flex items-center gap-pad-8">
+      <svg class="w-4 h-4 text-brand-one shrink-0">
+        <use href="/icons/sprite/sprite.svg#mail"></use>
+      </svg>
+      <span class="text-caption text-light-base text-nowrap">
+        info@septiki-spb.com
+      </span>
+    </div>
+
+    <div class="flex items-center gap-pad-8">
+      <svg class="w-4 h-4 text-brand-one shrink-0">
+        <use href="/icons/sprite/sprite.svg#pin"></use>
+      </svg>
+      <span class="text-caption text-light-base">
+        г. Санкт-Петербург, пр-кт Космонавтов, д. 42, литера А, помещ. 3-Н, офис
+        2
+      </span>
+    </div>
+
+    <!-- BUTTON  -->
+    {{> components/button-transparent-blue id="phone-callback" text="Заказать звонок"
+    class="flex " disabled=false }}
+  </div>
+</div>

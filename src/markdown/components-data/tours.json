@@ -1,0 +1,7 @@
+{
+  "title": "Туры в Таиланд",
+  "tours": [
+    { "city": "Пхукет", "price": "$499", "rating": 4.8, "available": true },
+    { "city": "Бангкок", "price": "$399", "rating": 4.5, "available": true }
+  ]
+}

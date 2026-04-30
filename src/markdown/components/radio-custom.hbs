@@ -1,0 +1,44 @@
+<label class="flex items-center gap-1 smx:gap-2 cursor-pointer">
+
+  <input
+    type="radio"
+    name="{{name}}"
+    value="{{value}}"
+    class="radio-input hidden"
+    {{#if checked}}checked{{/if}}
+  />
+
+  <!-- внешний круг -->
+  <span class="
+  shrink-0
+    w-5 h-5 
+    rounded-full 
+    border border-blue-400 
+    flex items-center justify-center
+  ">
+
+    <!-- белое кольцо = padding эффект -->
+    <span class="
+      w-[12px] h-[12px] 
+      bg-white 
+      rounded-full 
+      flex items-center justify-center
+      hidden
+    ">
+
+      <!-- синий центр -->
+      <span class="
+        w-full h-full 
+        bg-blue-500 
+        rounded-full
+      "></span>
+
+    </span>
+
+  </span>
+
+  {{#if label}}
+    <span class="text-body text-light-base text-nowrap">{{label}}</span>
+  {{/if}}
+
+</label>

@@ -1,0 +1,24 @@
+<div id="{{navId}}" class="flex items-center justify-end gap-[12px] {{hideClass}}">
+  <!-- PREV -->
+  <button
+    class="slider-prev shrink-0 w-[63px] h-[28px] flex items-center justify-center cursor-pointer text-bg-darkest disabled:text-slate-300"
+  >
+    <svg class="w-8 h-3 transition-transform">
+      <use href="/icons/sprite/sprite.svg#left"></use>
+    </svg>
+  </button>
+
+  <!-- PAGINATION BAR -->
+  <div class="{{paginationClass}} flex w-[60px]">
+    <!-- генерится динамически -->
+  </div>
+
+  <!-- NEXT -->
+  <button
+    class="slider-next shrink-0 w-[63px] h-[28px] flex items-center justify-center cursor-pointer transition duration-200 bg-brand-one rounded-[16px] hover:bg-brand-one-darkest active:bg-brand-main disabled:bg-slate-300"
+  >
+    <svg class="w-8 h-3 text-white">
+      <use href="/icons/sprite/sprite.svg#right"></use>
+    </svg>
+  </button>
+</div>
