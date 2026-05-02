@@ -1,0 +1,143 @@
+<section id="consultation" class="consultation">
+  <div class="eco-container section-y-padding relative overflow-hidden z-10">  
+
+     <!-- TITLE -->
+    <div class="text-center max-w-[72.5rem] mx-auto flex flex-col gap-[0.75rem] mb-[2.5rem] md:mb-[5rem]
+    ">
+      <h2 class="text-h2 uppercase font-unbounded text-light-base">
+        <span class="text-brand-main"> проконсультруйтесь</span> с инженером
+      </h2>
+      <p class="text-h5 text-light-secondary">
+       Он простыми словами объяснит в чем  отличие одной модели от другой
+      </p>
+    </div>
+
+
+    <div class="absolute inset-0 -z-10">
+      <picture>
+        <!-- desktop -->
+        <source 
+          media="(min-width: 50rem)" 
+          srcset="/images/webp/consultation/consultation-desktop-bg.webp"
+        />
+
+        <!-- tablet -->
+        <source 
+          media="(min-width: 28.125rem)" 
+          srcset="/images/webp/consultation/consultation-tablet-bg.webp"
+        />
+
+        <!-- mobile (fallback) -->
+        <img 
+          src="/images/webp/consultation/consultation-mobile-bg.webp"
+          class="w-full h-full object-cover mds:object-[20%_0%] mdx:object-center"
+          alt=""
+        />
+      </picture>
+
+    </div>
+
+    <div class="flex flex-col gap-[2.5rem]">
+      <!-- CARDS WRAPPER -->
+      <div
+        class="flex flex-col md:flex-row gap-[1.5rem] smx:gap-[2.5rem] justify-between"
+      >
+        <!-- ================= LEFT CARD ================= -->
+        <div class="md:max-w-[28.125rem] w-full flex flex-col gap-[0.75rem] md:gap-[1.25rem]">
+          <h3 class="text-[0.875rem] smx:text-[1rem] mdx:text-[1.25rem] uppercase font-unbounded text-light-base">            
+            <span class="text-brand-main">ИНЖЕНЕР ПОМОЖЕТ разобраться :</span>             
+          </h3>
+          
+          <!-- LIST ITEM -->
+          <div class="flex flex-col w-full gap-[1rem] smx:gap-[2rem] smx:mt-[1rem]">
+            <!-- ITEM 1 -->
+            <div
+              class="w-full md:max-w-[18.75rem] flex flex-col gap-[0.375rem]"
+            >
+              <div class="flex items-center gap-[0.5rem]">
+                <svg class="w-6 h-6 text-brand-one shrink-0">
+                  <use href="/icons/sprite/sprite.svg#users"></use>
+                </svg>
+                <span class="text-body-large text-light-base"
+                  >Какой септик проще установить самостоятельно</span
+                >
+              </div>            
+            </div>
+
+            <!-- ITEM 2 -->
+            <div
+              class="w-full md:max-w-[18.75rem] flex flex-col gap-[0.375rem]"
+            >
+              <div class="flex items-center gap-[0.5rem]">
+                <svg class="w-6 h-6 text-brand-one shrink-0">
+                  <use href="/icons/sprite/sprite.svg#waves"></use>
+                </svg>
+                <span class="text-body-large text-light-base">Какой подойдет для участка с высокими грунтовыми водами</span>
+              </div>
+                            
+            </div>
+
+            <!-- ITEM 3 -->
+            <div
+              class="w-full md:max-w-[18.75rem] flex flex-col gap-[0.375rem]"
+            >
+              <div class="flex items-center gap-[0.5rem]">
+                <svg class="w-6 h-6 text-brand-one shrink-0">
+                  <use href="/icons/sprite/sprite.svg#calendar-days"></use>
+                </svg>
+                <span class="text-body-large text-light-base">Какая камера сброса будет оптимальна для вашего участка</span>
+              </div>
+                            
+            </div>
+          </div>
+        </div>
+
+        <!-- ================= RIGHT CARD ================= -->
+        <div
+          class="md:max-w-[27.6875rem] card-shadow rounded-big p-[1rem] smx:p-[1.5rem] mdx:p-[2.5rem] w-full flex flex-col gap-[0.75rem] mdx:gap-[1.25rem]"
+        >
+          <h3 class="text-[0.875rem] smx:text-[1rem] mdx:text-[1.25rem] uppercase font-unbounded text-light-base">
+            Как с вами связаться?
+          </h3>
+
+          <p class="text-[0.875rem] smx:text-[1rem] text-black leading-[1.6] mb-1">
+           Наш специалист свяжется с вами через 5 минут
+          </p>
+
+          <!-- FORM -->
+          <form id="consultation-form" class="flex flex-col gap-[0.5rem] smx:gap-[1rem]">
+
+            <!-- INPUT DATE -->
+            <div class="flex flex-col gap-[0.5rem] mdx:gap-[1rem]">
+              {{> components/input-field
+                type="tel"
+                placeholder="Телефон"
+                name="consultaion-tel"  
+                
+              }}
+                <!-- INPUT PHONE -->
+              {{> components/textarea-field                
+                name="cunsultation-question"
+                placeholder="Ваш вопрос"               
+              }}       
+
+            </div>
+          
+
+            <!-- BUTTON -->
+            {{> components/button-blue id="consultation-submit" type="submit" text="Отправить" 
+            class="w-full h-[3rem] smx:h-[3.75rem] " disabled=false }}
+
+            <!-- CHECKBOX -->
+            {{> components/check-line
+              requred="true"
+              name="consultation-policy"
+              text="Нажимая на кнопку вы соглашаетесь с условиями пользовательского соглашения"
+            }}
+                      
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

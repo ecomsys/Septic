@@ -1,6 +1,7 @@
 html {
   scrollbar-gutter: stable;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   overflow-x: hidden;
@@ -31,8 +32,9 @@ body {
 Контейнер
 *******************************************/
 .eco-container {
-  @apply min-w-[21.25rem] max-w-[120rem] mx-auto px-[0.75rem] xsx:px-[1.25rem] smx:px-[1.5625rem] md:px-wrapper;
+  @apply min-w-[22.5rem] max-w-[100rem] mx-auto px-[1.25rem] smx:px-[1.5625rem] md:px-wrapper;
 }
+
 
 /********************************************
 Status in header
@@ -67,8 +69,8 @@ header burger modal
   }
 }
 
-.signup-shadow {
-  box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.15);
+.card-shadow {
+  box-shadow: 0 1.25rem 3.125rem 0 rgba(0, 0, 0, 0.15);
   @apply bg-icon-fill;
 }
 
@@ -89,7 +91,7 @@ faq
 }
 
 .faq-item.active .faq-content {
-  max-height: 500px; /* достаточно большое значение */
+  max-height: 31.25rem; /* достаточно большое значение */
 }
 
 .faq-header,
@@ -126,13 +128,30 @@ swiper
 /********************************************
 section custom
 ********************************************/
+.section-hero-title {
+  @apply text-[1.5rem] smx:text-[1.75rem] mdx:text-[2.625rem] leading-[1.6] uppercase font-unbounded text-light-base ;
+}
+
 .section-title {
-  @apply text-[18px] smx:text-[24px] mdx:text-[32px] leading-[1.6] uppercase font-unbounded text-light-base text-center;
+  @apply text-[1.125rem] smx:text-[1.5rem] mdx:text-[2rem] leading-[1.6] uppercase font-unbounded text-light-base text-center;
+}
+
+.section-title-right {
+  @apply text-[1.125rem] smx:text-[1.5rem] mdx:text-[2rem] leading-[1.6] uppercase font-unbounded text-light-base text-right;
+}
+
+.section-title-left, .section-title-none {
+  @apply text-[1.125rem] smx:text-[1.5rem] mdx:text-[2rem] leading-[1.6] uppercase font-unbounded text-light-base ;
 }
 
 .section-y-padding {
-  @apply py-[40px] smx:py-[60px] mdx:py-[100px];
+  @apply py-[2.5rem] smx:py-[3.75rem] mdx:py-[6.25rem];
 }
+
+.section-hero-y-padding {
+  @apply pt-[2.5rem] smx:pt-[3.75rem] mdx:pt-[6.25rem] pb-[2.5rem] mdx:pb-[4rem];
+}
+
 
 /********************************************
 hide datepicker icon
@@ -191,7 +210,7 @@ custom checkbox
 species tabs
 ********************************************/
 [data-mobile-cell] {
-  min-height: 24px;
+  min-height: 1.5rem;
 }
 
 .species ul li {
@@ -203,7 +222,7 @@ species tabs
 septic form
 ********************************************/
 .septic-shadow{
-  box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.04);
+  box-shadow: 0 0.5rem 1.875rem 0 rgba(0, 0, 0, 0.04);
 }
 .radio-input:checked + span span {
   display: flex;
@@ -213,18 +232,18 @@ septic form
 .range-slider {
   -webkit-appearance: none;
   appearance: none;
-  height: 3px;
+  height: 0.1875rem;
   background: #cbd5e1; /* slate-300 */
-  border-radius: 999px;
+  border-radius: 62.4375rem;
   outline: none;
-  transform: translateY(-8px);
+  transform: translateY(-0.5rem);
 }
 
 /* track (webkit) */
 .range-slider::-webkit-slider-runnable-track {
-  height: 3px;
+  height: 0.1875rem;
   background: #cbd5e1;
-  border-radius: 999px;
+  border-radius: 62.4375rem;
 }
 
 /* thumb */
@@ -232,24 +251,24 @@ septic form
   -webkit-appearance: none;
   appearance: none;
 
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
 
   background: #fff;
-  border: 2px solid #3b82f6; /* blue-500 */
+  border: 0.125rem solid #3b82f6; /* blue-500 */
   border-radius: 50%;
 
   cursor: pointer;
-  margin-top: -10px; /* центрирование */
+  margin-top: -0.625rem; /* центрирование */
 }
 
 /* firefox */
 .range-slider::-moz-range-thumb {
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
 
   background: #fff;
-  border: 2px solid #3b82f6;
+  border: 0.125rem solid #3b82f6;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -263,17 +282,104 @@ septic form
 }
 
 .counter-badge {
-  width: 22px;
-  height: 22px;
-  min-width: 22px;
+  width: 1.375rem;
+  height: 1.375rem;
+  min-width: 1.375rem;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  border-radius: 999px;
+  border-radius: 62.4375rem;
   background: #3b82f6; /* blue-500 */
   color: white;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 600;
+}
+
+
+/********************************************
+steps
+********************************************/
+.steps-bg {
+  background-image: url("/images/webp/steps/steps-bg.webp");
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  background-size: cover;
+}
+
+
+
+/********************************************
+installation slider
+********************************************/
+#installation-slider {
+  /* Важно: не задавать фиксированную высоту */
+  height: auto;
+}
+
+#installation-slider .swiper-wrapper {
+  height: auto !important; /* перебиваем дефолтную высоту Swiper */
+}
+
+#installation-slider .swiper-slide {
+  height: auto !important; /* слайд тянется под контент */
+}
+
+/********************************************
+installation slider
+********************************************/
+.compare-bg {
+background-image: url("/images/webp/compare/compare-bg.webp");
+  background-repeat: no-repeat;
+  background-position: center 45%;
+  background-size: cover;
+}
+
+
+
+/********************************************
+compare slider
+********************************************/
+#compare-slider {
+  /* Важно: не задавать фиксированную высоту */
+  height: auto;
+}
+
+#compare-slider .swiper-wrapper {
+  height: auto !important; /* перебиваем дефолтную высоту Swiper */
+}
+
+#compare-slider .swiper-slide {
+  height: auto !important; /* слайд тянется под контент */
+}
+
+
+/********************************************
+tech
+********************************************/
+.tech-bg {
+  @apply bg-[url('/images/webp/tech/diagrams.webp')] bg-no-repeat bg-[size:300%] bg-[position:center_52%] smx:bg-cover smx:bg-[position:center_45%]}
+
+
+/********************************************
+hero
+********************************************/
+.hero-bg {
+  @apply bg-[url('/images/webp/hero/hero-bg.webp')] bg-no-repeat bg-cover bg-[position:center_center]
+}
+
+.show-burger-driwer {
+  @apply -translate-x-1/1 smx:translate-x-[initial];
+}
+
+.hide-burger-driwer {
+  @apply translate-x-1/1 smx:translate-x-[initial];
+}
+
+/* отдельное ограничение */
+@media (min-width: 40rem) {
+  #hero-burger-driwer {
+    display: none !important;
+  }
 }

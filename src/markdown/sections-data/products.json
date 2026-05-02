@@ -1,0 +1,298 @@
+{
+  "sliders": [
+    {
+      "id": "products-slider-1",
+      "idNav":"products-slider-1-nav",
+      "title": "септики от производителя ",
+      "titleMain":"БИОДЕВАЙС",
+      "brand": "/images/webp/brands/biodevice.webp",
+      "anchor": "biodevice-products",
+      "products": [
+        {
+          "title": "ERGOBOX 3",
+          "img": "/images/webp/products/ergobox.webp",
+          "alt": "ergobox",
+          "users": "3",
+          "price": "95 000 ₽",
+          "oldPrice": "110 000 ₽"
+        },
+        {
+          "title": "ERGOBOX 4",
+          "img": "/images/webp/products/ergobox.webp",
+          "alt": "ergobox",
+          "users": "4",
+          "price": "105 000 ₽",
+          "oldPrice": "120 000 ₽"
+        },
+        {
+          "title": "ERGOBOX 5",
+          "img": "/images/webp/products/ergobox.webp",
+          "alt": "ergobox",
+          "users": "5",
+          "price": "115 000 ₽",
+          "oldPrice": "130 000 ₽"
+        },
+        {
+          "title": "ERGOBOX 6",
+          "img": "/images/webp/products/ergobox.webp",
+          "alt": "ergobox",
+          "users": "6",
+          "price": "125 000 ₽",
+          "oldPrice": "140 000 ₽"
+        },
+        {
+          "title": "ERGOBOX 7",
+          "img": "/images/webp/products/ergobox.webp",
+          "alt": "ergobox",
+          "users": "7",
+          "price": "135 000 ₽",
+          "oldPrice": "150 000 ₽"
+        },
+        {
+          "title": "ERGOBOX 8",
+          "img": "/images/webp/products/ergobox.webp",
+          "alt": "ergobox",
+          "users": "8",
+          "price": "145 000 ₽",
+          "oldPrice": "160 000 ₽"
+        }
+      ]
+    },
+
+    {      
+      "id": "products-slider-2",
+      "idNav":"products-slider-2-nav",
+      "title": "септики от производителя ",
+      "titleMain":"АКВАЛОС",
+      "brand": "/images/webp/brands/aqualos.webp",
+      "anchor": "aqualos-products",
+      "products": [
+        {
+          "title": "AQUALOS 3",
+          "img": "/images/webp/products/aqualos-3.webp",
+          "alt": "aqualos",
+          "users": "3",
+          "price": "85 000 ₽",
+          "oldPrice": "100 000 ₽"
+        },
+        {
+          "title": "AQUALOS 4",
+          "img": "/images/webp/products/aqualos-4.webp",
+          "alt": "aqualos",
+          "users": "4",
+          "price": "95 000 ₽",
+          "oldPrice": "110 000 ₽"
+        },
+        {
+          "title": "AQUALOS 5",
+          "img": "/images/webp/products/aqualos-3.webp",
+          "alt": "aqualos",
+          "users": "5",
+          "price": "105 000 ₽",
+          "oldPrice": "120 000 ₽"
+        },
+        {
+          "title": "AQUALOS 6",
+          "img": "/images/webp/products/aqualos-3.webp",
+          "alt": "aqualos",
+          "users": "6",
+          "price": "115 000 ₽",
+          "oldPrice": "130 000 ₽"
+        },
+        {
+          "title": "AQUALOS 7",
+          "img": "/images/webp/products/aqualos-3.webp",
+          "alt": "aqualos",
+          "users": "7",
+          "price": "125 000 ₽",
+          "oldPrice": "140 000 ₽"
+        },
+        {
+          "title": "AQUALOS 8",
+          "img": "/images/webp/products/aqualos-3.webp",
+          "alt": "aqualos",
+          "users": "8",
+          "price": "135 000 ₽",
+          "oldPrice": "150 000 ₽"
+        }
+      ]
+    },
+
+    {
+      "id": "products-slider-3",
+      "idNav":"products-slider-3-nav",
+      "title": "септики от производителя ",
+      "titleMain":"ЮНИЛОС",
+      "brand": "/images/webp/brands/inilos.webp",
+      "anchor": "inilos-products",
+      "products": [
+        {
+          "title": "UNILOS 3",
+          "img": "/images/webp/products/inilos.webp",
+          "alt": "unilos",
+          "users": "3",
+          "price": "90 000 ₽",
+          "oldPrice": "105 000 ₽"
+        },
+        {
+          "title": "UNILOS 4",
+          "img": "/images/webp/products/inilos.webp",
+          "alt": "unilos",
+          "users": "4",
+          "price": "100 000 ₽",
+          "oldPrice": "115 000 ₽"
+        },
+        {
+          "title": "UNILOS 5",
+          "img": "/images/webp/products/inilos.webp",
+          "alt": "unilos",
+          "users": "5",
+          "price": "110 000 ₽",
+          "oldPrice": "125 000 ₽"
+        },
+        {
+          "title": "UNILOS 6",
+          "img": "/images/webp/products/inilos.webp",
+          "alt": "unilos",
+          "users": "6",
+          "price": "120 000 ₽",
+          "oldPrice": "135 000 ₽"
+        },
+        {
+          "title": "UNILOS 7",
+          "img": "/images/webp/products/inilos.webp",
+          "alt": "unilos",
+          "users": "7",
+          "price": "130 000 ₽",
+          "oldPrice": "145 000 ₽"
+        },
+        {
+          "title": "UNILOS 8",
+          "img": "/images/webp/products/inilos.webp",
+          "alt": "unilos",
+          "users": "8",
+          "price": "140 000 ₽",
+          "oldPrice": "155 000 ₽"
+        }
+      ]
+    },
+
+    {
+      "id": "products-slider-4",
+      "idNav":"products-slider-4-nav",
+      "title": "септики от производителя ",
+      "titleMain":"ТОПОЛ-ЭКО",
+      "brand": "/images/webp/brands/topas.webp",
+      "anchor": "topol-products",
+      "products": [
+        {
+          "title": "TOPAS 3",
+          "img": "/images/webp/products/topol.webp",
+          "alt": "topas",
+          "users": "3",
+          "price": "92 000 ₽",
+          "oldPrice": "107 000 ₽"
+        },
+        {
+          "title": "TOPAS 4",
+          "img": "/images/webp/products/topol.webp",
+          "alt": "topas",
+          "users": "4",
+          "price": "102 000 ₽",
+          "oldPrice": "117 000 ₽"
+        },
+        {
+          "title": "TOPAS 5",
+          "img": "/images/webp/products/topol.webp",
+          "alt": "topas",
+          "users": "5",
+          "price": "112 000 ₽",
+          "oldPrice": "127 000 ₽"
+        },
+        {
+          "title": "TOPAS 6",
+          "img": "/images/webp/products/topol.webp",
+          "alt": "topas",
+          "users": "6",
+          "price": "122 000 ₽",
+          "oldPrice": "137 000 ₽"
+        },
+        {
+          "title": "TOPAS 7",
+          "img": "/images/webp/products/topol.webp",
+          "alt": "topas",
+          "users": "7",
+          "price": "132 000 ₽",
+          "oldPrice": "147 000 ₽"
+        },
+        {
+          "title": "TOPAS 8",
+          "img": "/images/webp/products/topol.webp",
+          "alt": "topas",
+          "users": "8",
+          "price": "142 000 ₽",
+          "oldPrice": "157 000 ₽"
+        }
+      ]
+    },
+
+    {
+      "id": "products-slider-5",
+      "idNav":"products-slider-5-nav",
+      "title": "септики от производителя ",
+      "titleMain": "ЕВРОЛОС",
+      "brand": "/images/webp/brands/eurolos.webp",
+      "anchor": "eurolos-products",
+      "products": [
+        {
+          "title": "EUROLOS 3",
+          "img": "/images/webp/products/eurolos.webp",
+          "alt": "eurolos",
+          "users": "3",
+          "price": "88 000 ₽",
+          "oldPrice": "103 000 ₽"
+        },
+        {
+          "title": "EUROLOS 4",
+          "img": "/images/webp/products/eurolos.webp",
+          "alt": "eurolos",
+          "users": "4",
+          "price": "98 000 ₽",
+          "oldPrice": "113 000 ₽"
+        },
+        {
+          "title": "EUROLOS 5",
+          "img": "/images/webp/products/eurolos.webp",
+          "alt": "eurolos",
+          "users": "5",
+          "price": "108 000 ₽",
+          "oldPrice": "123 000 ₽"
+        },
+        {
+          "title": "EUROLOS 6",
+          "img": "/images/webp/products/eurolos.webp",
+          "alt": "eurolos",
+          "users": "6",
+          "price": "118 000 ₽",
+          "oldPrice": "133 000 ₽"
+        },
+        {
+          "title": "EUROLOS 7",
+          "img": "/images/webp/products/eurolos.webp",
+          "alt": "eurolos",
+          "users": "7",
+          "price": "128 000 ₽",
+          "oldPrice": "143 000 ₽"
+        },
+        {
+          "title": "EUROLOS 8",
+          "img": "/images/webp/products/eurolos.webp",
+          "alt": "eurolos",
+          "users": "8",
+          "price": "138 000 ₽",
+          "oldPrice": "153 000 ₽"
+        }
+      ]
+    }
+  ]
+}

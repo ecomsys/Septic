@@ -1,0 +1,57 @@
+<div class="{{#if end}} aspect-[370/140] {{else if first}} aspect-[370/178] {{else if first}} aspect-[370/148] {{/if}}
+smx:shrink-0 smxx:shrink-[initial] smxx:max-w-[13.75rem] smxx:aspect-[223/234] 
+{{#if end}} mdx:aspect-[372/204] mdx:max-w-[23.25rem] {{else}} mdx:aspect-[419/204] mdx:max-w-[26.4375rem] {{/if}} relative">
+  <!-- SVG BACK (как контент, а не фон) -->
+
+  <div class="pointer-events-none select-none">
+    <picture>
+      <source
+        media="(min-width: 80rem)"
+        srcset="{{desktop}}"
+      />
+      <source
+        media="(min-width: 47.5rem)"
+        srcset="{{tablet}}"
+      />
+      <img
+        src="{{mobile}}"
+        class="w-full h-full object-contain"
+        alt=""
+      />
+    </picture>
+  </div>
+
+   <div class="absolute -translate-y-1/2 top-0 left-[19%] flex items-center gap-[1.25rem]">
+      <!-- CIRCLE -->
+      <div
+        class="w-20 h-20 rounded-full bg-brand-one flex items-center justify-center shrink-0"
+      >
+        <svg class="w-11 h-11 text-white">
+          <use href="/icons/sprite/sprite.svg#{{icon}}"></use>
+        </svg>
+      </div>
+
+      <!-- STEP -->
+      <span class="text-body font-unbounded uppercase text-brand-one">
+        {{step}}
+      </span>
+    </div>
+
+  <!-- CONTENT -->
+  <div class="absolute z-10 flex flex-col gap-[1rem]
+  top-[35%] sm:top-[32%] mdx:top-[30%] left-[7%]  
+  max-w-[21.875rem] smxx:max-w-[10.9375rem] mdx:max-w-[19.6875rem]">
+      
+
+    <!-- TEXT -->
+    <div class="flex flex-col gap-0.5 smx:gap-[0.375rem]">
+      <h3 class="max-w-[17.5rem] sm:max-w-[initial] text-[0.875rem] mdx:text-[1rem] font-unbounded uppercase text-light-base leading-[1.6]">
+        {{title}}
+      </h3>
+
+      <p class="hidden sm:block text-[0.875rem] mdx:text-[1rem] text-[#3a3b3d] leading-[1.6]">
+        {{description}}
+      </p>
+    </div>
+  </div>
+</div>

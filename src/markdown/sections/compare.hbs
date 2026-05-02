@@ -1,0 +1,113 @@
+<section class="bg-[#f8f9fa]">
+  <div class="section-y-padding compare-bg eco-container flex flex-col gap-[0.75rem] smx:gap-[1rem] mdx:gap-[1.875rem]">
+
+    <!-- ROW 1 -->
+    <div class="flex smx:justify-end">
+      <h2 class="section-title-none smx:max-w-[34.375rem] mdx:max-w-[60rem] smx:ml-auto smx:text-right">
+        <span class="text-brand-main">Сравните</span> канализации 
+        каждого из производителей        
+      </h2>      
+    </div>
+
+      <!-- NAVIGATION -->      
+          {{> components/slider-navigation 
+            navId="compare-slider-nav"
+            paginationClass="compare-pagination" 
+          }}      
+
+
+    <!-- ROW 2 -->
+    <div class="flex flex-row items-end gap-5">
+
+      <!-- LEFT LIST -->
+      <ul class="text-[0.75rem] leading-[1.6] font-unbounded uppercase text-light-secondary 
+      w-full max-w-[12.4375rem] smx:max-w-[13.875rem] mdx:max-w-[20.125rem] shrink-0 
+      flex flex-col gap-[0.6875rem] mdx:gap-3.5 mb-2 smx:mb-6 mdx:mb-8">
+        <li class="text-nowrap">Срок службы</li>
+        <li class="text-nowrap">Уровень грунтовых вод</li>
+        <li class="text-nowrap">Степень очистки</li>
+        <li class="text-nowrap">Камера сброса</li>
+        <li class="text-nowrap">Форма корпуса</li>
+        <li class="text-nowrap">Дополнительный уход</li>
+        <li class="text-nowrap">Время монтажа</li>
+      </ul>
+
+      <!-- RIGHT SLIDER -->
+      <div class="flex-1 min-w-0 relative flex flex-col gap-[0.5rem] smx:gap-[1rem] mdx:gap-[1.5rem]">
+      
+        <!-- SLIDER -->
+        <div class="swiper w-full" id="compare-slider">
+          <div class="swiper-wrapper">
+
+            {{> components/compare-card 
+              anchor="index.html#eurolos-products"
+              brandTitle="Евролос"
+              brandIcon="/images/webp/brands/eurolos.webp"
+              row1="50 лет"
+              row2="Высокий"
+              row3="99%"
+              row4="120 л."
+              row5="Цилиндрическая"
+              row6="Не требуется"
+              row7="1 день"          
+            }}
+
+            {{> components/compare-card 
+              anchor="index.html#aqualos-products"
+              brandTitle="Аквалос"
+              brandIcon="/images/webp/brands/aqualos.webp"
+              row1="30 лет"
+              row2="Высокий"
+              row3="75%"
+              row4="80 л."
+              row5="Цилиндрическая"
+              row6="Не требуется"
+              row7="5 дней"          
+            }}
+
+            {{> components/compare-card 
+              anchor="index.html#biodevice-products"
+              brandTitle="Биодевайс"
+              brandIcon="/images/webp/brands/biodevice.webp"
+              row1="45 лет"
+              row2="Высокий"
+              row3="80%"
+              row4="120 л."
+              row5="Куб"
+              row6="Проверка швов"
+              row7="2 дня"          
+            }}
+
+            {{> components/compare-card 
+              anchor="index.html#inilos-products"
+              brandTitle="Юнилос"
+              brandIcon="/images/webp/brands/inilos.webp"
+              row1="45 лет"
+              row2="Высокий"
+              row3="80%"
+              row4="120 л."
+              row5="Куб"
+              row6="Проверка швов"
+              row7="2 дня"          
+            }}
+
+            {{> components/compare-card 
+              anchor="index.html#topol-products"
+              brandTitle="Топол про"
+              brandIcon="/images/webp/brands/topas.webp"
+              row1="45 лет"
+              row2="Высокий"
+              row3="80%"
+              row4="120 л."
+              row5="Куб"
+              row6="Проверка швов"
+              row7="2 дня"          
+            }}
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>

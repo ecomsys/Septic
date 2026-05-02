@@ -1,0 +1,49 @@
+<div
+  id="modal-overlay"
+  class="px-4 fixed inset-0 bg-black/20 z-150 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300"
+>
+  <div
+    id="modal-content"
+    class="max-w-[24rem] card-shadow rounded-[0.5rem] px-[1.5rem] pb-[1.5rem] pt-[1.25rem] w-full flex flex-col gap-[0.875rem] bg-white relative scale-95 opacity-0 transition-all duration-300"
+  >
+    <!-- FORM -->
+
+    <form id="my-form" class="flex flex-col gap-[0.5rem] smx:gap-[1rem]">
+      <!-- INPUT DATE -->
+      <div class="flex flex-row md:flex-col gap-[0.5rem] mdx:gap-[1rem]">
+        <div class="input-field relative w-full">
+          <span
+            class="absolute left-[1.25rem] top-1/2 -translate-y-1/2 pointer-events-none"
+          >
+            <svg class="w-6 h-6 text-[#475569]">
+              <use href="/icons/sprite/sprite.svg#user"></use>
+            </svg>
+          </span>
+
+          <input
+            type="text"
+            name="my-name"
+            placeholder="Ваше имя*"
+            required
+            class="placeholder:text-[#475569] w-full border-[0.0625rem] border-neutral-200 rounded-[0.5rem] pl-[3.5rem] pr-[1.25rem] py-[0.625rem] text-body h-[3.75rem] focus:outline-none focus:ring-2 focus:ring-slate-300 focus:border-slate-400 transition"
+          />
+        </div>
+      </div>
+
+      <div class="input-field relative w-full">
+        <input
+          type="text"
+          name="my-tel"
+          required
+          placeholder="Ваш телефон"
+          class="placeholder:text-[#475569] w-full border-[0.0625rem] border-neutral-200 rounded-[0.5rem] pl-[3.5rem] pr-[1.25rem] py-[0.625rem] text-body h-[3.75rem] focus:outline-none focus:ring-2 focus:ring-slate-300 focus:border-slate-400 transition"
+        />
+      </div>
+
+      <!-- BUTTON -->
+      {{> components/button-blue id="signup-submit" type="submit"
+      text="Отправить" class="w-full h-[3rem] smx:h-[3.75rem] mdx:mt-[0.75rem]"
+      disabled=false }}
+    </form>
+  </div>
+</div>

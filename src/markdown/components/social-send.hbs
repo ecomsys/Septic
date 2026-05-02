@@ -1,30 +1,55 @@
-<div class="flex items-center gap-[10px]">
-    
-  {{!-- call --}}
-  <a href="#" target="_blank" class="transition diration-200 hover:scale-110">
-    <svg class="w-6 h-6 text-brand-one">
-      <use href="/icons/sprite/sprite.svg#phone-call"></use>
-    </svg>
-  </a>
+<div class="flex items-center gap-[0rem]">
 
-  {{!-- telegram --}}
-  <a href="#" target="_blank" class="transition diration-200 hover:scale-110" title="Телеграм">
-    <svg class="w-6 h-6 text-brand-one">
-      <use href="/icons/sprite/sprite.svg#telegram"></use>
-    </svg>
-  </a>
+  <!-- CALL -->
+  <label class="cursor-pointer">
+    <input type="radio" name="{{name}}" value="call" class="hidden peer" />
 
-  {{!-- whatsapp --}}
-  <a href="#" target="_blank" class="transition diration-200 hover:scale-110" title="Ватсап">
-    <svg class="w-6 h-6 text-brand-one">
-      <use href="/icons/sprite/sprite.svg#whatsapp"></use>
-    </svg>
-  </a>
+    <div class="w-10 h-10 flex items-center justify-center rounded-full border-[0.0625rem] border-transparent 
+                peer-checked:border-brand-one peer-checked:bg-brand-one/10 
+                transition">
+      <svg class="w-6 h-6 text-brand-one">
+        <use href="/icons/sprite/sprite.svg#phone-call"></use>
+      </svg>
+    </div>
+  </label>
 
-  {{!-- max --}}
-  <a href="#" target="_blank" class="transition diration-200 hover:scale-110" title="Макс">
-    <svg class="w-6 h-6 text-brand-one">
-      <use href="/icons/sprite/sprite.svg#max"></use>
-    </svg>
-  </a>
+  <!-- TELEGRAM -->
+  <label class="cursor-pointer">
+    <input type="radio" name="{{name}}" value="telegram" class="hidden peer" />
+
+    <div class="w-10 h-10 flex items-center justify-center rounded-full border-[0.0625rem] border-transparent 
+                peer-checked:border-brand-one peer-checked:bg-brand-one/10 
+                transition">
+      <svg class="w-6 h-6 text-brand-one">
+        <use href="/icons/sprite/sprite.svg#telegram"></use>
+      </svg>
+    </div>
+  </label>
+
+  <!-- WHATSAPP -->
+  <label class="cursor-pointer">
+    <input type="radio" name="{{name}}" value="whatsapp" class="hidden peer" />
+
+    <div class="w-10 h-10 flex items-center justify-center rounded-full border-[0.0625rem] border-transparent 
+                peer-checked:border-brand-one peer-checked:bg-brand-one/10 
+                transition">
+      <svg class="w-6 h-6 text-brand-one">
+        <use href="/icons/sprite/sprite.svg#whatsapp"></use>
+      </svg>
+    </div>
+  </label>
+
+  <!-- MAX -->
+  <label class="cursor-pointer">
+    <input type="radio" name="{{name}}" value="whatsapp" class="hidden peer" />
+
+    <div class="w-10 h-10 flex items-center justify-center rounded-full border-[0.0625rem] border-transparent 
+                peer-checked:border-brand-one peer-checked:bg-brand-one/10 
+                transition">
+      <svg class="w-6 h-6 text-brand-one">
+        <use href="/icons/sprite/sprite.svg#max"></use>
+      </svg>
+    </div>
+  </label>
+
 </div>

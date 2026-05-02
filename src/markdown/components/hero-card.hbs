@@ -1,0 +1,28 @@
+<a href="index.html#{{anchor}}"
+  class="flex flex-col h-full  bg-icon-fill overflow-hidden select-none hover:scale-[102%] transition
+  gap-3 rounded-[0.5rem] py-[0.5rem] px-[1rem] mdx:py-[1rem] mdx:px-[1.5rem]
+  w-[8.5rem] smx:w-[7.5rem] mdx:w-[8.75rem]
+  aspect-[136/135] smx:aspect-[120/135] mdx:aspect-[140/152]
+  "
+>
+  <!-- IMAGE -->
+  <div    
+    class="w-full"
+  >
+    <img src="{{img}}" alt="{{alt}}" class="w-full h-full object-cover" />
+  </div>
+
+  <!-- CONTENT -->
+  <div class="flex flex-col gap-1 text-center">
+    <!-- TITLE -->
+    <h3
+      class="uppercase text-[0.75rem] leading-[1.4] font-unbounded text-light-base text-nowrap"
+    >
+      {{title}}
+    </h3>
+
+    <p class="text-[0.875rem] text-light-secondary leading-[1.6]">
+      {{description}}
+    </p>
+  </div>
+</a>

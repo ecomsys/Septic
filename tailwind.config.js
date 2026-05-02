@@ -10,7 +10,9 @@ export default {
       sm: "25.625rem", // React/sm_410
       smm: "26.6rem",
       smx: "40rem", // React/smx_640
+      smxx: "47.5rem",
       mds: "48rem", // React/mds_768
+      mdss: "50rem", // 
       md: "62.5rem", // React/md_1000
       mdx: "80rem", // React/mdx_1280
       lg: "90rem", // React/lg_1440
@@ -51,48 +53,42 @@ export default {
       //   h0: [
       //     "clamp(1.75rem, 5vw, 3.25rem)",
       //     {
-      //       // size/h0: 52(D) 42(T) 28(M)
-      //       fontWeight: "700",
+      //       // size/h0: 52(D) 42(T) 28(M)      
       //       lineHeight: "1.2",
       //     },
       //   ],
       //   h1: [
       //     "clamp(1.5rem, 5vw, 2.625rem)",
       //     {
-      //       // size/h1: 42(D) 28(T) 24(M)
-      //       fontWeight: "700",
+      //       // size/h1: 42(D) 28(T) 24(M)      
       //       lineHeight: "1.6",
       //     },
       //   ],
       //   h2: [
       //     "clamp(1.125rem, 4vw, 2rem)",
       //     {
-      //       // size/h2: 32(D) 24(T) 18(M)
-      //       fontWeight: "800",
+      //       // size/h2: 32(D) 24(T) 18(M)      
       //       lineHeight: "1.6",
       //     },
       //   ],
       //   h3: [
       //     "clamp(1rem, 3.5vw, 1.75rem)",
       //     {
-      //       // size/h3: 28(D) 20(T) 16(M)
-      //       fontWeight: "600",
+      //       // size/h3: 28(D) 20(T) 16(M)      
       //       lineHeight: "1.6",
       //     },
       //   ],
       //   h4: [
       //     "clamp(0.875rem, 3vw, 1.25rem)",
       //     {
-      //       // size/h4: 20(D) 16(T) 14(M)
-      //       fontWeight: "600",
+      //       // size/h4: 20(D) 16(T) 14(M)      
       //       lineHeight: "1.6",
       //     },
       //   ],
       //   h5: [
       //     "0.875rem",
       //     {
-      //       // size/h5: 16(D) 14(T) 14(M)
-      //       fontWeight: "600",
+      //       // size/h5: 16(D) 14(T) 14(M)      
       //       lineHeight: "1.6",
       //     },
       //   ],
@@ -100,7 +96,6 @@ export default {
       //     "0.75rem",
       //     {
       //       // size/h6: все 12
-      //       fontWeight: "600",
       //       lineHeight: "1.6",
       //     },
       //   ],

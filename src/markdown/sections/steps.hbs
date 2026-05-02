@@ -1,0 +1,58 @@
+<section class="bg-white">
+  <div class="steps-bg section-y-padding eco-container flex flex-col gap-[1.5rem] mdx:gap-[2.5rem]">
+    <!-- HEADER -->
+    <div class="flex flex-col gap-[0.75rem] mb-[2.5rem]">
+      <h2 class="section-title max-w-[78.75rem] mx-auto">
+        РАССчитайте стоимость и подберите подходящую модель септика за <span class="text-brand-main"> 30 секунд</span>
+      </h2>
+
+      <p class="text-body text-light-secondary text-center mx-auto max-w-[43.75rem]">
+        Это локальные очистные сооружения, которые работают благодаря двум принципам
+очистки: грубой механической и глубокой биологической.
+      </p>
+    </div>
+
+    <!-- CARDS GRID -->
+    <div class="flex flex-col gap-x-[1rem] gap-y-[2.5rem]
+     smxx:flex-row smx:justify-between">
+     
+     {{> components/steps-card 
+     mobile="/images/webp/steps/vector-mobile-top.webp"
+     tablet="/images/webp/steps/vector-tablet.webp"
+     desktop="/images/webp/steps/vector-desktop.webp"
+     icon="circle-question"
+     step="Шаг 1"
+     end=false
+     first=true
+     title="Ответьте на 5 простых вопросов"
+     description="Они помогут подобрать для вас подходящий септик"
+     }}
+
+     {{> components/steps-card 
+     mobile="/images/webp/steps/vector-mobile-middle.webp"
+     tablet="/images/webp/steps/vector-tablet.webp"
+     desktop="/images/webp/steps/vector-desktop.webp"
+     icon="scroll-text"
+     step="Шаг 2"
+     end=false
+     first=flase
+     title="Получите список септиков"
+     description="и подробную консультацию нашего специалиста"
+     }}
+
+     {{> components/steps-card 
+     mobile="/images/webp/steps/vector-mobile-end.webp"
+     tablet="/images/webp/steps/vector-tablet-end.webp"
+     desktop="/images/webp/steps/vector-desktop-end.webp"
+     icon="circle-question"
+     step="Шаг 3"
+     end=true
+     first=flase
+     title="Узнайте финальную стоимость"
+     description="с установкой и без установки- при самостоятельном монтаже"
+     }}
+
+     
+    </div>
+  </div>
+</section>

@@ -8,7 +8,7 @@
           <!-- BURGER -->
           <button
             id="burger-btn"
-            class="flex items-center cursor-pointer text-brand-one hover:text-light-base duration-200 transition-all"
+            class="flex items-center cursor-pointer text-light-base hover:text-brand-one duration-200 transition-all"
           >
             <svg class="w-6 h-6 shrink-0">
               <use href="/icons/sprite/sprite.svg#burger"></use>
@@ -178,7 +178,7 @@
         </div>
 
         <!-- BUTTON (hidden on mobile) -->
-        {{> components/button-transparent-blue id="callback-btn" text="Заказать
+        {{> components/button-transparent-blue modalCallback="true" text="Заказать
         звонок" class="hidden smx:flex " disabled=false }}
       </div>
     </div>

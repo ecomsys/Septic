@@ -4,10 +4,12 @@ import handlebars from "vite-plugin-handlebars";
 import path from "path";
 
 import worksData from "./src/markdown/sections-data/works.json" assert { type: "json" };
+import productsData from "./src/markdown/sections-data/products.json" assert { type: "json" };
 
 const fullContext = {
   // Для туров  
   works: worksData.worksItems,
+  sliders: productsData.sliders,
   
   // Для отзывов
   // reviewsTitle: reviewsData.title,

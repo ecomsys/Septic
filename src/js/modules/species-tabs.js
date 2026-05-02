@@ -28,7 +28,7 @@ export function speciesTabs() {
       const el = document.createElement("div");
 
       el.className = `
-        flex-1 h-[4px] rounded-full transition
+        flex-1 h-[0.25rem] rounded-full transition
         ${i === current ? "bg-black" : "bg-neutral-300"}
       `;
 
@@ -41,10 +41,10 @@ export function speciesTabs() {
     const type = types[current];
 
     mobileHeader.innerHTML = `
-      <div class="max-w-[100px] aspect-square mx-auto mb-[8px]">
+      <div class="max-w-[6.25rem] aspect-square mx-auto mb-[0.5rem]">
         <img src="${type.img}" class="w-full h-full object-cover" />
       </div>
-      <div class="text-[12px] md:text-[16px] leading-[1.6] text-light-base min-h-[38px] md:min-h-[52px] font-unbounded uppercase leading-[1.6]">${type.title}</div>
+      <div class="text-[0.75rem] md:text-[1rem] leading-[1.6] text-light-base min-h-[2.375rem] md:min-h-[3.25rem] font-unbounded uppercase leading-[1.6]">${type.title}</div>
     `;
   }
 

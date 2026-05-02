@@ -52,7 +52,7 @@ export function processSlider() {
       const item = document.createElement("div");
 
       item.className =
-        "h-[3px] flex-1 bg-slate-200 rounded-full cursor-pointer transition-all";
+        "h-[0.1875rem] flex-1 bg-slate-200 rounded-full cursor-pointer transition-all";
 
       item.addEventListener("click", () => {
         swiper.slideTo(i);

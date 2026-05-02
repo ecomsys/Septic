@@ -1,0 +1,171 @@
+<section class="bg-[#f8f9fa]">
+  <div class="section-hero-y-padding relative overflow-hidden z-10 eco-container">
+
+      <div class="absolute inset-0 -z-10">
+      <picture>
+        <!-- desktop -->
+        <source 
+          media="(min-width: 80rem)" 
+          srcset="/images/webp/hero/hero-desktop-bg.webp"
+        />
+
+        <!-- tablet -->
+        <source 
+          media="(min-width: 40rem)" 
+          srcset="/images/webp/hero/hero-tablet-bg.webp"
+        />
+
+        <!-- mobile (fallback) -->
+        <img 
+          src="/images/webp/hero/hero-mobile-bg.webp"
+          class="w-full h-full object-cover mds:object-[20%_0%] mdx:object-center"
+          alt=""
+        />
+      </picture>
+
+    </div>
+
+    <!-- ROW 2 -->
+    <div class="flex flex-col smx:flex-row justify-between gap-5">
+      <!-- LEFT LIST -->
+
+      <div class="relative flex flex-col gap-8 mdx:gap-[7.25rem]">
+        <div class="flex flex-col gap-4 mdx:gap-11">
+          <h1 class="section-hero-title max-w-[29.375rem] mdx:max-w-[60.75rem]">
+            Сколько стоят
+            <span class="text-brand-main">автономные канализации </span> для
+            загородных домов и дач?
+          </h1>
+          <p
+            class="text-[0.875rem] mdx:text-[1rem] text-light-secondary max-w-[25.25rem] mdx:max-w-[43.75rem]"
+          >
+            Рассчитайте стоимость и подберите подходящую модель септика за 30
+            секунд
+          </p>
+        </div>
+
+        <div class="flex flex-col gap-5 smx:gap-8 mdx:gap-11">
+          {{!-- buttons --}}
+          <div
+            class="flex flex-col mdx:flex-row mdx:items-center gap-4 mdx:gap-6"
+          >
+            {{> components/a-blue text="Рассчитать
+            со специалистом" class="flex w-full sm:max-w-[23.875rem] h-[3rem] "
+            anchor="index.html#consultation" }} 
+            
+            {{> components/a-transparent-blue text="РАССЧИТАТЬ САМОСТОЯТЕЛЬНО"
+            class="flex w-full sm:max-w-[23.875rem] h-[3rem] " anchor="index.html#septic" }}
+          </div>
+
+          {{!-- brands --}}
+          <div class="flex items-center flex-wrap gap-3 mdx:gap-6">
+            <div class="max-w-[8.1875rem] smx:max-w-[8.25rem]">
+              <img
+                src="/images/webp/brands/inilos.webp"
+                class="w-full h-full object-cover"
+                alt=""
+              />
+            </div>
+
+            <div class="max-w-[7.3125rem] smx:max-w-[8.25rem]">
+              <img
+                src="/images/webp/brands/topas.webp"
+                class="w-full h-full object-cover"
+                alt=""
+              />
+            </div>
+
+            <div class="max-w-[5.9375rem] smx:max-w-[8.25rem]">
+              <img
+                src="/images/webp/brands/eurolos.webp"
+                class="w-full h-full object-cover"
+                alt=""
+              />
+            </div>
+
+            <div class="max-w-[7.4375rem] smx:max-w-[8.25rem]">
+              <img
+                src="/images/webp/brands/biodevice.webp"
+                class="w-full h-full object-cover"
+                alt=""
+              />
+            </div>
+
+            <div class="max-w-[5.875rem] smx:max-w-[8.25rem]">
+              <img
+                src="/images/webp/brands/aqualos.webp"
+                class="w-full h-full object-cover"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <!--CANVAS BURGER -->
+          <button
+            id="hero-burger-btn"
+            class="smx:hidden absolute top-0 right-0 flex items-center cursor-pointer text-light-base hover:text-brand-one duration-200 transition-all"
+          >
+            <svg class="w-6 h-6 shrink-0">
+              <use href="/icons/sprite/sprite.svg#burger"></use>
+            </svg>
+          </button>
+      </div>
+
+      {{!-- CNAVAS OVERLAY --}}
+     <div id="hero-overlay" class="fixed inset-0 bg-black/20 z-40  opacity-0 pointer-events-none  transition-opacity smx:hidden"></div>
+     
+      <!--CANVAS DRIWER -->
+      <div id="hero-drawer" class="flex fixed top-30 smx:top-0 right-0 smx:relative
+         translate-x-full smx:translate-x-0 shrink-0 h-min z-50 smx:z-[initial]
+         transition-transform duration-300 ease-in-out">
+
+        <div
+        class="grid grid-cols-2 relative gap-1 ">
+        {{> components/hero-card 
+        img="/images/webp/products/eurolos.webp"
+        alt="ЕВРОЛОС"
+        title="ЕВРОЛОС"
+        description="4 модели"
+        anchor="eurolos-products"
+        }}
+
+         {{> components/hero-card 
+        img="/images/webp/products/inilos.webp"
+        alt="ЮНИЛОС"
+        title="ЮНИЛОС"
+        description="5 модели"
+        anchor="inilos-products"
+        }}
+
+         {{> components/hero-card 
+        img="/images/webp/products/ergobox.webp"
+        alt="БИОДЕВАЙС"
+        title="БИОДЕВАЙС"
+        description="10 модели"
+        anchor="biodevice-products"
+        }}
+
+         {{> components/hero-card 
+        img="/images/webp/products/aqualos-3.webp"
+        alt="АКВАЛОС"
+        title="АКВАЛОС"
+        description="7 модели"
+        anchor="aqualos-products"
+        }}
+
+        <div class="dolly-close"></div>
+
+         {{> components/hero-card 
+        img="/images/webp/products/topol.webp"
+        alt="ТОПОЛ-ЭКО"
+        title="ТОПОЛ-ЭКО"
+        description="4 модели"
+        anchor="topol-products"
+        }}
+      </div>
+      </div>
+
+    </div>
+  </div>
+</section>

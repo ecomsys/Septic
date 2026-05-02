@@ -1,0 +1,62 @@
+<section class="section-y-padding bg-white">
+  <div class="eco-container flex flex-col gap-[0.75rem] smx:gap-[2rem] mdx:gap-[1.875rem]">
+    <!-- ROW 1 -->
+    <div class="flex flex-col gap-[0.75rem] text-center ">
+
+      <h2 class="section-title max-w-[60rem] mx-auto">
+        <span class="text-brand-main">БЫстрая установка</span> на любой участок 
+        без каких-либо затруднений        
+      </h2>
+      <p class="text-[1rem] text-light-secondary leading-[1.6] mdx:max-w-[43.75rem] mx-auto">
+       Это локальные очистные сооружения, которые работают благодаря двум принципам
+        очистки: грубой механической и глубокой биологической.
+      </p>
+    </div>
+
+    <!-- ROW 2 -->
+    <div class="relative flex flex-col gap-[0.5rem] smx:gap-[1rem] mdx:gap-[1.5rem]">
+      <!-- NAVIGATION -->
+      <div class="hidden smx:block">
+      {{> components/slider-navigation navId="installation-slider-nav"
+      paginationClass="installation-pagination" }}
+      </div>
+
+      <!-- SLIDER -->
+      <div class="swiper" id="installation-slider">
+        <div class="swiper-wrapper">
+          <!-- SLIDE -->
+          {{> components/installation-card 
+          img="/images/webp/installation/pic-1.webp"
+          text="определения и уточнения стандартных подходов"
+          }}
+
+            {{> components/installation-card 
+          img="/images/webp/installation/pic-2.webp"
+          text="таким образом, глубокий уровень погружения требует определения и уточнения стандартных подходов"
+          }}
+
+            {{> components/installation-card 
+          img="/images/webp/installation/pic-3.webp"
+          text="таким образом, глубокий уровень погружения требует определения и уточнения стандартных подходов"
+          }}
+
+            {{> components/installation-card 
+          img="/images/webp/installation/pic-1.webp"
+          text="таким образом, глубокий уровень погружения требует определения и уточнения стандартных подходов"
+          }}
+
+            {{> components/installation-card 
+          img="/images/webp/installation/pic-2.webp"
+          text="таким образом, глубокий уровень погружения требует определения и уточнения стандартных подходов"
+          }}
+          
+            {{> components/installation-card 
+          img="/images/webp/installation/pic-2.webp"
+          text="таким образом, глубокий уровень погружения требует определения и уточнения стандартных подходов"
+          }}
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

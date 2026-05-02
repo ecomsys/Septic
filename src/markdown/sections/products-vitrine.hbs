@@ -1,0 +1,22 @@
+<section class="section-y-padding bg-[#f8f9fa]">
+  <div class="eco-container">
+
+    <h2 class="section-title uppercase text-center mb-[1rem] mdx:mb-[2.5rem]">
+        септики в наличии
+    </h2> 
+  
+<div class="flex flex-col gap-[1.5rem] mdx:gap-[2.5rem]">
+   {{#each sliders}}
+    {{> components/products-slider
+      id=id
+      navId=idNav
+      title=title
+      titleMain=titleMain
+      brand=brand
+      products=products
+      anchor=anchor
+    }}
+  {{/each}}
+   </div>
+  </div>
+</section>

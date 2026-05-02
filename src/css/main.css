@@ -10,60 +10,60 @@
 
 /* h0: 52(D) 42(T) 28(M) */
 .text-h0 {
-  @apply text-[28px] smx:text-[42px] mdx:text-[52px]  leading-[1.6];
+  @apply text-[1.75rem] smx:text-[2.625rem] mdx:text-[3.25rem]  leading-[1.6];
 }
 
 /* h1: 42(D) 28(T) 24(M) */
 .text-h1 {
-  @apply text-[24px] smx:text-[28px] mdx:text-[42px]  leading-[1.6];
+  @apply text-[1.5rem] smx:text-[1.75rem] mdx:text-[2.625rem]  leading-[1.6];
 }
 
 /* h2: 32(D) 24(T) 18(M) */
 .text-h2 {
-  @apply text-[18px] smx:text-[24px] mdx:text-[32px]  leading-[1.6];
+  @apply text-[1.125rem] smx:text-[1.5rem] mdx:text-[2rem]  leading-[1.6];
 }
 
 /* h3: 28(D) 20(T) 16(M) */
 .text-h3 {
-  @apply text-[16px] smx:text-[20px] mdx:text-[28px]  leading-[1.6];
+  @apply text-[1rem] smx:text-[1.25rem] mdx:text-[1.75rem]  leading-[1.6];
 }
 
 /* h4: 20(D) 16(T) 14(M) */
 .text-h4 {
-  @apply text-[14px] smx:text-[16px] mdx:text-[20px]  leading-[1.6];
+  @apply text-[0.875rem] smx:text-[1rem] mdx:text-[1.25rem]  leading-[1.6];
 }
 
 /* h5: 16(D) 14(T) 14(M) */
 .text-h5 {
-  @apply text-[14px] smx:text-[14px] mdx:text-[16px]  leading-[1.6];
+  @apply text-[0.875rem] smx:text-[0.875rem] mdx:text-[1rem]  leading-[1.6];
 }
 
 /* h6: все 12 */
 .text-h6 {
-  @apply text-[12px]  leading-[1.6];
+  @apply text-[0.75rem]  leading-[1.6];
 }
 
 /* body-large: 18(D) 18(T) 16(M) */
 .text-body-large {
-  @apply text-[16px] smx:text-[18px] mdx:text-[18px] leading-[1.6];
+  @apply text-[1rem] smx:text-[1.125rem] mdx:text-[1.125rem] leading-[1.6];
 }
 
 /* body: 16(D) 14(T) 14(M) */
 .text-body {
-  @apply text-[14px] smx:text-[14px] mdx:text-[16px]  leading-[1.6];
+  @apply text-[0.875rem] smx:text-[0.875rem] mdx:text-[1rem]  leading-[1.6];
 }
 
 /* body-small: 14(D) 14(T) 12(M) */
 .text-body-small {
-  @apply text-[12px] smx:text-[14px] mdx:text-[14px]  leading-[1.6];
+  @apply text-[0.75rem] smx:text-[0.875rem] mdx:text-[0.875rem]  leading-[1.6];
 }
 
 /* caption: все 12 */
 .text-caption {
-  @apply text-[12px]  leading-[1.6];
+  @apply text-[0.75rem]  leading-[1.6];
 }
 
 
 .rounded-big{
-  @apply rounded-[24px] mdx:rounded-[36px];
+  @apply rounded-[1.5rem] mdx:rounded-[2.25rem];
 }

@@ -1,0 +1,32 @@
+<div class="input-field relative w-full">
+
+  <textarea
+    name="{{name}}"
+    placeholder="{{placeholder}}"
+
+    class="w-full border-[0.0625rem] border-neutral-200  rounded-[0.5rem] 
+      px-[1.25rem] py-[0.625rem] text-body min-h-[9.375rem] resize-none
+
+      focus:outline-none 
+      focus:ring-2 focus:ring-slate-300 
+      focus:border-slate-400 
+      transition
+    "
+
+    data-input
+    {{#if required}}required{{/if}}
+  ></textarea>
+
+  {{#if icon}}
+    <button
+      type="button"
+      class="input-trigger absolute right-[0.75rem] top-[1rem] bg-white"
+      data-trigger
+    >
+      <svg class="w-6 h-6 text-brand-one pointer-events-none">
+        <use href="/icons/sprite/sprite.svg#{{icon}}"></use>
+      </svg>
+    </button>
+  {{/if}}
+
+</div>

@@ -1,0 +1,52 @@
+<!-- ROW -->
+<div id="{{anchor}}" class="relative flex flex-col gap-3 smx:gap-[0.5rem] mdx:gap-[1.5rem]">
+
+  <!-- NAVIGATION -->
+  <div class="hidden smx:block">
+  {{> components/slider-navigation 
+    navId=navId
+    paginationClass="products-pagination" 
+  }}
+  </div>
+
+  <!-- HEADER -->
+  <div class="flex flex-col smx:justify-between smx:flex-row smx:items-center smx:gap-[1.5rem]">
+
+    <h2 class="text-[1rem] mdx:text-[1.75rem] font-unbounded leading-[1.6] uppercase">
+      {{{title}}} <span class="text-brand-main">{{titleMain}}</span>
+    </h2>
+
+    <div class="w-[6.6875rem] smx:w-[10.0625rem] shrink-0 ml-auto ">
+      <img src="{{brand}}" alt="brand" class="w-full h-auto object-contain">
+    </div>
+
+  </div>
+
+  <!-- FEATURES -->
+  <div class="flex flex-wrap justify-end gap-[0.25rem] smx:gap-[0.75rem]">
+
+    {{> components/tile icon="tool-case" labelBig="Установка за 1 день" labelMin="1 день"}}
+    {{> components/tile icon="shield-check" labelBig="Гарантия 15 лет" labelMin="15 лет"}}
+    {{> components/tile icon="droplet" labelBig="Степень очистки 99%" labelMin="99%"}}
+
+  </div>
+
+  <!-- SLIDER -->
+  <div class="swiper" id="{{id}}">
+    <div class="swiper-wrapper">
+
+      {{#each products}}
+        {{> components/product-card 
+          title=this.title         
+          img=this.img
+          alt=this.alt
+          users=this.users
+          price=this.price
+          oldPrice=this.oldPrice
+        }}
+      {{/each}}
+
+    </div>
+  </div>
+
+</div>

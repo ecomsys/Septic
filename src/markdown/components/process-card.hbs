@@ -1,0 +1,39 @@
+<div
+  class="swiper-slide overflow-hidden select-none"
+>
+<div class="flex flex-col gap-2">
+  <iframe
+    class="w-full h-full aspect-[437/246]"
+    src="https://rutube.ru/play/embed/{{videoId}}"
+    frameborder="0"
+    allow="autoplay; fullscreen"
+    allowfullscreen
+  ></iframe>
+
+  <div class="flex gap-1.5 items-center text-light-secondary">
+    <svg class="w-6 h-6">
+        <use href="/icons/sprite/sprite.svg#eye"></use>
+      </svg>
+      <span class="text-body">2б3 тыс. просмотров</span>
+  </div>
+  </div>
+
+</div>
+
+
+ {{!-- В functions.php добавишь простую функцию --}}
+{{!-- function get_rutube_views($video_id) {
+    $api_url = "https://rutube.ru/api/video/{$video_id}/";
+    $response = wp_remote_get($api_url);
+    
+    if (!is_wp_error($response)) {
+        $data = json_decode(wp_remote_retrieve_body($response));
+        return $data->views_count;
+    }
+    return 0;
+}
+
+// И в шаблоне карточки:
+<span class="views-count">
+    <?php echo number_format(get_rutube_views($video_id)); ?> просмотров
+</span> --}}

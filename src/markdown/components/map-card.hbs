@@ -1,13 +1,13 @@
 <!-- MAP CARD -->
 <div
   id="map-card"
-  class="animation-slidein-enter absolute top-1/2 -translate-y-1/2 w-full max-w-[447px] p-[24px] smx:p-[16px] bg-white rounded-big"
+  class="animation-slidein-enter absolute top-1/2 -translate-y-1/2 w-full max-w-[27.9375rem] p-[1.5rem] smx:p-[1rem] bg-white rounded-big"
 >
   <div class="flex flex-col">
     <!-- HEADER -->
     <div class="flex items-center justify-between pb-2">
       <h2
-        class="text-[14px] smx:text-[16px] text-light-base uppercase text-light-base font-unbounded leading-[1.6]"
+        class="text-[0.875rem] smx:text-[1rem] text-light-base uppercase text-light-base font-unbounded leading-[1.6]"
       >
         Свяжитесь с нами
       </h2>
@@ -25,19 +25,19 @@
     <div class="border-t border-neutral-200"></div>
 
     <!-- CONTENT -->
-    <div class="flex flex-col gap-[8px] py-[8px] smx:py-[16px]">
+    <div class="flex flex-col gap-[0.5rem] py-[0.5rem] smx:py-[1rem]">
       <!-- ADDRESS -->
-      <div class="flex items-start gap-[12px]">
+      <div class="flex items-start gap-[0.75rem]">
         <svg class="w-6 h-6 text-brand-one shrink-0">
           <use href="/icons/sprite/sprite.svg#map-pin"></use>
         </svg>
 
         <div class="flex flex-col">
-          <span class="text-[12px] leading-[1.6] text-light-secondary"
+          <span class="text-[0.75rem] leading-[1.6] text-light-secondary"
             >Наш адрес:</span
           >
           <span
-            class="text-[14px] smx:text-[16px] leading-[1.6] text-light-base"
+            class="text-[0.875rem] smx:text-[1rem] leading-[1.6] text-light-base"
           >
             г. Санкт-Петербург, пр-кт Космонавтов, д. 42, литера А, помещ. 3-Н,
             офис 2
@@ -46,17 +46,17 @@
       </div>
 
       <!-- WORK TIME -->
-      <div class="flex items-start gap-[12px]">
+      <div class="flex items-start gap-[0.75rem]">
         <svg class="w-6 h-6 text-brand-one shrink-0">
           <use href="/icons/sprite/sprite.svg#clock"></use>
         </svg>
 
         <div class="flex flex-col gap-1.5">
-          <span class="text-[12px] leading-[1.6] text-light-secondary"
+          <span class="text-[0.75rem] leading-[1.6] text-light-secondary"
             >Мы работаем:</span
           >
           <span
-            class="text-[14px] smx:text-[16px] leading-[1.6] text-light-base"
+            class="text-[0.875rem] smx:text-[1rem] leading-[1.6] text-light-base"
           >
             Ежедневно с 10 до 20
           </span>
@@ -64,17 +64,17 @@
       </div>
 
       <!-- EMAIL -->
-      <div class="flex items-start gap-[12px]">
+      <div class="flex items-start gap-[0.75rem]">
         <svg class="w-6 h-6 text-brand-one shrink-0">
           <use href="/icons/sprite/sprite.svg#mail"></use>
         </svg>
 
         <div class="flex flex-col">
-          <span class="text-[12px] leading-[1.6] text-light-secondary"
+          <span class="text-[0.75rem] leading-[1.6] text-light-secondary"
             >Наша почта:</span
           >
           <span
-            class="text-[14px] smx:text-[16px] leading-[1.6] text-light-base"
+            class="text-[0.875rem] smx:text-[1rem] leading-[1.6] text-light-base"
           >
             info@septiki-spb.com
           </span>
@@ -85,24 +85,24 @@
     <div class="border-t border-neutral-200"></div>
 
     <!-- FOOTER -->
-    <div class="flex flex-col gap-[20px] pb-[4px]">
+    <div class="flex flex-col gap-[1.25rem] pb-[0.25rem]">
       <!-- TOP ROW -->
       <div
-        class="flex flex-col smx:flex-row items-center justify-between gap-[15px] py-[12px] 
-        smx:pt-[28px] smx:pb-[24px]"
+        class="flex flex-col smx:flex-row items-center justify-between gap-[0.9375rem] py-[0.75rem] 
+        smx:pt-[1.75rem] smx:pb-[1.5rem]"
       >
         <!-- BUTTON -->
-        {{> components/button-blue id="map-callback" text="Оставьте заявку"
-        class="h-[48px] w-full smx:h-[38px] smx:w-[initial]" disabled=false }}
+        {{> components/button-blue modalCallback="true" text="Оставьте заявку"
+        class="h-[3rem] w-full smx:h-[2.375rem] smx:w-[initial]" disabled=false }}
 
         <!-- PHONE -->
         <div class="flex flex-col">
           <span
-            class="text-light-base text-center smx:text-left uppercase font-unbounded font-normal text-nowrap leading-[1.2] text-[12px] smx:text-[1rem] mdx:text-[1.25rem]"
+            class="text-light-base text-center smx:text-left uppercase font-unbounded font-normal text-nowrap leading-[1.2] text-[0.75rem] smx:text-[1rem] mdx:text-[1.25rem]"
             >+7 812 467 84 04</span
           >
           <span
-            class="text-[12px] smx:text-[14px] leading-[1.2] text-center smx:text-right text-light-secondary text-nowrap"
+            class="text-[0.75rem] smx:text-[0.875rem] leading-[1.2] text-center smx:text-right text-light-secondary text-nowrap"
           >
             Звоните или оставляйте заявку
           </span>
@@ -110,8 +110,8 @@
       </div>
 
       <!-- SOCIAL -->
-      <div class="flex flex-row gap-[32px]">
-        <span class="text-[14px] text-light-secondary leading-[1.6] font-gilroy">Мы в соцсетях:</span>
+      <div class="flex flex-row gap-[2rem]">
+        <span class="text-[0.875rem] text-light-secondary leading-[1.6] font-gilroy">Мы в соцсетях:</span>
 
         {{> components/social}}
       </div>

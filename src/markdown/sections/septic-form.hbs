@@ -1,10 +1,10 @@
-<section class="septic-form section-y-padding bg-bg-base">
+<section id="septic" class="septic-form section-y-padding bg-bg-base">
   <div class="eco-container">
 
-    <div class="relative overflow-hidden flex flex-col md:flex-row rounded-[24px] mdx:rounded-[36px] septic-shadow bg-white py-[32px] px-[12px] smx:p-[20px] mdx:p-[40px]">
+    <div class="relative overflow-hidden flex flex-col md:flex-row rounded-[1.5rem] mdx:rounded-[2.25rem] septic-shadow bg-white py-[2rem] px-[0.75rem] smx:p-[1.25rem] mdx:p-[2.5rem]">
 
       {{!-- LEFT --}}
-      <form id="septic-form" class="flex-1 flex flex-col gap-6 md:border-r border-gray-200 md:pr-[20px] mdx:pr-[40px]">
+      <form id="septic-form" class="flex-1 flex flex-col gap-6 md:border-r border-gray-200 md:pr-[1.25rem] mdx:pr-[2.5rem]">
 
         <!-- Заголовок -->
         <h2 class="text-h2 uppercase text-light-base font-unbounded">
@@ -215,15 +215,15 @@
         </div>
 
         <!-- СОЦСЕТИ -->
-        <div class="flex flex-col mb-[-20px] smm:mb-0
+        <div class="flex flex-col mb-[-1.25rem] smm:mb-0
         smm:flex-row smm:items-center smm:gap-8">
 
           <span class="text-body uppercase text-light-base font-unbounded">
             Куда отправить результат подбора?
           </span>
 
-          <div class="flex justify-end smx:justify-normal -translate-y-[20px] smm:translate-y-0">
-          {{> components/social-send }}
+          <div class="flex justify-end smx:justify-normal -translate-y-[1.25rem] smm:translate-y-0">
+          {{> components/social-send name="septic-socialcontact"}}
           </div>
 
         </div>
@@ -233,14 +233,14 @@
 
           <div class="flex flex-col mds:flex-row gap-4">
 
-            {{> components/input-rounded type="text" name="septic-name" placeholder="Имя" class="px-6 h-[48px] text-body-small " }}
+            {{> components/input-rounded type="text" name="septic-name" placeholder="Имя" class="px-6 h-[3rem] text-body-small " }}
 
-            {{> components/input-rounded type="tel" name="septic-tel" placeholder="Телефон" class="px-6 h-[48px] text-body-small" }}
+            {{> components/input-rounded type="tel" name="septic-tel" placeholder="Телефон" class="px-6 h-[3rem] text-body-small" }}
 
             {{> components/button-blue 
               id="septic-btn-callback" 
               text="Отправить"
-              class="mds:min-w-[178px] h-[48px]" 
+              class="mds:min-w-[11.125rem] h-[3rem]" 
               type="submit" 
               disabled=false 
             }}
@@ -258,7 +258,7 @@
       {{!-- RIGHT --}}    
       <div class="z-5 w-full relative flex flex-col gap-3 pl-4 pt-7
       smx:pt-10
-      md:gap-6 md:min-w-[240px] md:w-[25%] md:pt-0 md:pl-[20px] mdx:pl-[40px]">
+      md:gap-6 md:min-w-[15rem] md:w-[25%] md:pt-0 md:pl-[1.25rem] mdx:pl-[2.5rem]">
 
         <!-- Заголовок -->
         <h2 class="text-body uppercase text-light-base font-unbounded">
@@ -267,7 +267,7 @@
 
         <!-- список -->
         <ol class="flex flex-col gap-3 list-none counter-reset custom-counter 
-        max-w-[213px] smx:max-w-[380px] mdx:max-w-[250px]">
+        max-w-[13.3125rem] smx:max-w-[23.75rem] mdx:max-w-[15.625rem]">
 
             <li class="flex items-start gap-2">
             <span class="text-body text-brand-one font-unbounded">1.</span>
@@ -315,11 +315,11 @@
             <img 
             src="/images/webp/hand.webp" 
             alt="phone hand"
-            class="w-full max-w-[150px] object-contain
-                smx:max-w-[178px] 
-                md:max-w-[225px]                
-                mdx:max-w-[255px]                
-                lg:max-w-[295px]                
+            class="w-full max-w-[9.375rem] object-contain
+                smx:max-w-[11.125rem] 
+                md:max-w-[14.0625rem]                
+                mdx:max-w-[15.9375rem]                
+                lg:max-w-[18.4375rem]                
             "
             />
         </div>
