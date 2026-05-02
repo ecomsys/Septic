@@ -41,4 +41,8 @@ export default defineConfig({
     host: true, // разрешаем все хосты
     strictPort: true,
   },
+   build: {
+    outDir: './docs',
+    emptyOutDir: true
+  }
 });
